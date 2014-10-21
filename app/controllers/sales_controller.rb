@@ -3,7 +3,9 @@ class SalesController < ApplicationController
   respond_to :html, :xml, :json
   before_filter :authenticate_user!
   def index
-    @sales = Sale.all
+    query="select distinct(s.saleId), (select concat(username,'  ', userLastName) from sellers where personId=s.sellerId), (select concat(personName, ' ', lastName) from clients where personId=s.clientId), s.saleDate, s.note from sales s, items i where s.saleId=i.saleId"
+    @sales=ActiveRecord::Base.connection.execute(query)
+    
     
   end
 
