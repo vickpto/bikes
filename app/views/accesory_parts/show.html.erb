@@ -11,7 +11,7 @@
     <div class="panel">
       <h4 class="hide-for-small"><%= @product.productTradeMark %> - <%= @product.productName %> <hr/></h4>
       <h5 class="subheader"><%= @product.productDescription %></h5>
-      <h5 class="subheader"><strong>Precio:</strong> <%= @product.productPrice %> COP$</h5>
+      <h5 class="subheader"><strong>Precio:</strong> <%= @product.productPrice %> COP</h5>
     </div>
 
     <div class="row">
@@ -19,7 +19,7 @@
         <div class="panel">
           <h5>Referencia</h5>
           <h6 class="subheader"><%= @product.productReference %></h6>
-          <%= link_to 'Volver', accesory_parts_path , class: "small button radius"%>
+          <%= link_to '← Volver', accesory_parts_path %>
         </div>
       </div>
 
@@ -35,7 +35,7 @@
             Deshabilitado
             <%end%>
           </h6>
-          <%= link_to 'Editar', edit_product_path(@product) , class: "small button success radius"%> 
+          <%= link_to 'Editar', edit_accesory_part_path(@product) , class: "small button success radius"%> 
         </div>
       </div>
       <%end%>

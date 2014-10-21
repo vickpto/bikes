@@ -47,12 +47,12 @@
                 Prohibida
                 <% end %>
               </td>
-              <td><%= link_to 'Ver', client , class: "button success tiny"%></td>
-              <td><%= link_to 'Editar', edit_client_path(client) , class: "button success tiny"%></td>
-              <td><%if client.personStatus == true%>
-                <%= link_to 'Deshabilitar', client , class: "button alert tiny",method: :delete, data: { confirm: 'Desea confirmar esta accion?' } %>
+              <td><%= link_to 'Ver', client , class: "small button success centered"%>
+              <%= link_to 'Editar', edit_client_path(client) , class: "small button success centered"%>
+              <%if client.personStatus == true%>
+                <%= link_to 'Deshabilitar', client , class: "small button alert",method: :delete, data: { confirm: 'Desea confirmar esta accion?' } %>
                 <% else %>
-                <%= link_to 'Habilitar', client ,class: "button success tiny", method: :delete, data: { confirm: 'Desea confirmar esta accion?' } %>
+                <%= link_to 'Habilitar', client ,class: "small button success centered", method: :delete, data: { confirm: 'Desea confirmar esta accion?' } %>
                 <% end %>
               </td>
 

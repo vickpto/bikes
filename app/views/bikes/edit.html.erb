@@ -1,8 +1,148 @@
 <div class="panel ">
 	<h1>Editar bicicleta</h1>
 
-	<%= render 'form' %>
+	<%= form_for(@product, html: {:multipart => true}) do |f| %>
+	<% if @product.errors.any? %>
+	<div class="row">
+		<div class="small-8 large-centered columns">
+			<div data-alert class="alert-box alert radius">
+				<%= pluralize(@product.errors.count, "error") %> no permite guardar la información de la bicicleta
+				<ul>
+					<% @product.errors.full_messages.each do |message| %>
+					<li><%= message %></li>
+					<% end %>
+				</ul>
+				<a href="#" class="close">&times;</a>
+			</div>
+		</div>
+	</div>
+	<% end %>
 
-	<%= link_to 'Show', @bike %> |
+	<%= f.hidden_field :typeProduct , :value => 'BIKE' %>
+	<div class="row">
+		<div class="small-8">
+			<div class="row">
+				<div class="small-3 columns">
+					<label for="right-label" class="right inline">Referencia</label>
+				</div>
+				<div class="small-9 columns">
+					<%= f.text_field :productReference , autofocus: true, :required =>true, :maxlength => 10%>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+
+
+	<div class="row">
+		<div class="small-8">
+			<div class="row">
+				<div class="small-3 columns">
+					<label for="right-label" class="right inline">Nombre de bicicleta</label>
+				</div>
+				<div class="small-9 columns">
+					<%= f.text_field :productName , :required =>true, :maxlength => 50%>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+
+	<div class="row">
+		<div class="small-8">
+			<div class="row">
+				<div class="small-3 columns">
+					<label for="right-label" class="right inline">Marca</label>
+				</div>
+				<div class="small-9 columns">
+					<%= f.text_field :productTradeMark , :required=>true, :maxlength =>50%>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+
+	<div class="row">
+		<div class="small-8">
+			<div class="row">
+				<div class="small-3 columns">
+					<label for="right-label" class="right inline">Precio</label>
+				</div>
+				<div class="small-9 columns">
+					<%= f.number_field :productPrice , :required =>true ,:maxlength => 10 %>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+
+	<div class="row">
+		<div class="small-8">
+			<div class="row">
+				<div class="small-3 columns">
+					<label for="right-label" class="right inline">Descripcion</label>
+				</div>
+				<div class="small-9 columns">
+					<%= f.text_field :productDescription, :required =>true, :maxlength =>300 %>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+
+	<div class="row">
+		<div class="small-8">
+			<div class="row">
+				<div class="small-3 columns">
+					<label for="right-label" class="right inline">Medidas</label>
+				</div>
+				<div class="small-9 columns">
+					<%= f.text_field :measures, :required=>true, :maxlength =>50 %>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+
+	<div class="row">
+		<div class="small-8">
+			<div class="row">
+				<div class="small-3 columns">
+					<label for="right-label" class="right inline">Tipo</label>
+				</div>
+				<div class="small-9 columns">
+					<%= f.text_field :bikeType, :required=>true, :maxlength=>50 %>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+
+	<div class="row">
+		<div class="small-8">
+			<div class="row">
+				<div class="small-3 columns">
+					<label for="right-label" class="right inline">Imagen</label>
+				</div>
+				<div class="small-9 columns">
+					<label><i>Si no desea modificar la imagen de este producto, no seleccione ningun archivo</i></label>
+					<%= f.file_field :image%>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+
+
+	<div class="row">
+		<div class="small-4 large-centered columns"><%= f.submit "Guardar", class: "button success radius" %>
+		</div>
+	</div>
+
+	<% end %>
+
+
+
+
 	<%= link_to 'Back', bikes_path %>
 </div>
