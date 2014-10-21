@@ -22,6 +22,28 @@
   <%= f.collection_select :clientId, @clients, :personId, :dataClients, include_blank: true, :required =>true %>
 </div>
 
+<!--Tabla de productos -->
+<table>
+  <thead>
+    <tr>
+      <th width="50">Identificador</th>
+      <th width="300">Nombre producto</th>
+      <th width="300">Referencia</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Content Goes Here</td>
+      <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+      <td>Content Goes Here</td>
+      <td>Content Goes Here</td>
+    </tr>
+  
+  </tbody>
+</table>
+
+<!-- Boton para agregar productos-->
 <a href="#" data-reveal-id="elegirProductos" class="radius button center">Elegir productos </a>
 
 <div class="field">
@@ -38,35 +60,37 @@
 </div>
 <% end %>
 
+
 <div id="elegirProductos" class="reveal-modal" data-reveal>
   <%= form_for(@item) do |f| %>
   <% if @item.errors.any? %>
-  <div id="error_explanation">
-    <h2><%= pluralize(@item.errors.count, "error") %> prohibited this item from being saved:</h2>
+    <div id="error_explanation">
+      <h2><%= pluralize(@item.errors.count, "error") %> prohibited this item from being saved:</h2>
 
-    <ul>
+      <ul>
       <% @item.errors.full_messages.each do |message| %>
-      <li><%= message %></li>
+        <li><%= message %></li>
       <% end %>
-    </ul>
-  </div>
+      </ul>
+    </div>
   <% end %>
 
+ <%= f.hidden_field :sale_id, :value => @sale.saleId %>
+
   <div class="field">
-    <%= f.hidden_field :sale_id, :value => @sale.saleId %>
+    Producto<br>
+    
+    <%= f.collection_select :productId, @products, :productId, :productName, include_blank: true, :required =>true %>
   </div>
   <div class="field">
-    <br>Producto</br>
-    <%= f.collection_select :productId, @bikes, :productId, :productName, include_blank: true %>
-  </div>
-  <div class="field">
-    <%= f.label :itemAmount %><br>
-    <%= f.number_field :itemAmount %>
+    Cantidades<br>
+    <%= f.number_field :itemAmount, :required =>true %>
   </div>
   <div class="actions">
     <%= f.submit %>
   </div>
-  <% end %>
+<% end %>
+
   <a class="close-reveal-modal">&#215;</a>
 
 </div>
