@@ -81,17 +81,6 @@ ActiveRecord::Schema.define(version: 20141020184336) do
   end
 
   create_table "sellers", force: true do |t|
-<<<<<<< HEAD
-    t.integer "personId",                         null: false
-    t.integer "document",                         null: false
-    t.string  "username",              limit: 50, null: false
-    t.string  "userLastName",          limit: 50, null: false
-    t.string  "email",                 limit: 50, null: false
-    t.string  "password",                         null: false
-    t.string  "telephone",             limit: 20, null: false
-    t.string  "userType",              limit: 10, null: false
-    t.boolean "status",                           null: false
-=======
     t.integer "personId",                null: false
     t.integer "document",                null: false
     t.string  "username",     limit: 50, null: false
@@ -101,7 +90,6 @@ ActiveRecord::Schema.define(version: 20141020184336) do
     t.string  "telephone",    limit: 20, null: false
     t.string  "userType",     limit: 10, null: false
     t.boolean "status",                  null: false
->>>>>>> 68aeda68bf24441b0c4b9ab33d044327d55c234b
   end
 
   create_table "users", force: true do |t|

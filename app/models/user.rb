@@ -16,4 +16,10 @@ class User < ActiveRecord::Base
   def user_params
       params.require(:user).permit(:username,:userLastName, :document, :telephone, :userType, :status, :email, :password, :password_confirmation)
   end
+  def active_for_authentication?
+    #remember to call the super
+    #then put our own check to determine "active" state using 
+    #our own "is_active" column
+    super and self.status?
+  end
 end
