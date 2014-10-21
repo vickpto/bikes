@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  personId: 1
+  contractDate: 2014-10-13
+  finalContractDate: 2014-10-13
+
+two:
+  personId: 1
+  contractDate: 2014-10-13
+  finalContractDate: 2014-10-13

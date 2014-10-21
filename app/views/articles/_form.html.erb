@@ -1,0 +1,46 @@
+<%= form_for(@article) do |f| %> 
+<% if @article.errors.any? %>
+<div class="row">
+  <div class="small-8 large-centered columns">
+    <div data-alert class="alert-box alert radius">
+      <%= pluralize(@article.errors.count, "error") %> no permite guardar la noticia
+      <ul>
+        <% @article.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+        <% end %>
+      </ul>
+      <a href="#" class="close">&times;</a>
+    </div>
+  </div>
+</div>
+<% end %>
+<div class="row">
+  <div class="large-6 columns">
+    <h4>TITULO </h4>
+    <em><tt>Definir titulo del articulo</tt></em>
+    <%= f.text_field :articleTitle, :required =>true, :maxlength =>5 %>
+  </div>
+</div>
+<div class="row">
+  <div class="large-9 columns">
+    <h4>RESUMEN</h4>
+    <em></em><tt>Escribir un breve resumen de la noticia</tt><em>
+    <%= f.text_area :summary, :required=>true, :maxlength =>5000%>
+  </div>
+</div> 
+<div class="row">
+  <div class="large-9 columns">
+    <h4>CONTENIDO</h4>
+    <em></em><tt>Escribir el cuerpo de la noticia</tt><em>
+    <%= f.text_area :body, :required=>true, :maxlength =>10000 %>
+  </div>
+</div> 
+<p>            </p>
+<div class="row">
+  <div class="small-4 large-centered columns"><%= f.submit "Guardar", class: "button success radius" %>
+  </div>
+</div>
+</div>
+</div>
+<% end %>
+

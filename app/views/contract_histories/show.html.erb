@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Personid:</strong>
+  <%= @contract_history.personId %>
+</p>
+
+<p>
+  <strong>Contractdate:</strong>
+  <%= @contract_history.contractDate %>
+</p>
+
+<p>
+  <strong>Finalcontractdate:</strong>
+  <%= @contract_history.finalContractDate %>
+</p>
+
+<%= link_to 'Edit', edit_contract_history_path(@contract_history) %> |
+<%= link_to 'Back', contract_histories_path %>

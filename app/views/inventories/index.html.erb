@@ -1,0 +1,45 @@
+<div class="panel">
+  <%if @inventories.empty?  %>
+  <div class="row">
+    <div class="small-8 large-centered columns">
+      <h1 align="center">Aun no se ha registrado ningun inventario</h1>
+    </div>
+    <%else%>
+    <div class="row">
+      <div class="small-12 large-centered columns">
+        <h1>Inventario - La Ciclería</h1>
+      </div>
+      <div class="small-12 large-centered columns">
+
+        <table>
+          <thead>
+            <tr>
+              <th>Cantidad</th>
+              <th>Producto</th>
+              <th>Fecha de registro</th>
+              <th colspan="3"></th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <% @inventories.each do |inventory| %>
+            <tr>
+              <td><%= inventory.productAmount %></td>
+              <td><%= inventory.productId %></td>
+              <td><%= inventory.agregationDate %></td>
+              <td><%= link_to 'Show', inventory %></td>
+              <td><%= link_to 'Destroy', inventory, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            </tr>
+            <% end %>
+          </tbody>
+        </table>
+
+        </div>
+      <br>
+      <%= link_to 'New Inventory', new_inventory_path , class: "radius button center"%>
+    </div>    
+  </div>
+  <br>
+  <%end %>
+</div>
+</div>

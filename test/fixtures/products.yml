@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  productId: 1
+  productReference: MyString
+  productName: MyString
+  productTradeMark: MyString
+  productPrice: 1
+  productStatus: false
+  productDescription: MyString
+  typeProduct: MyString
+  measures: MyString
+  bikeType: MyString
+  size: MyString
+  gender: MyString
+
+two:
+  productId: 1
+  productReference: MyString
+  productName: MyString
+  productTradeMark: MyString
+  productPrice: 1
+  productStatus: false
+  productDescription: MyString
+  typeProduct: MyString
+  measures: MyString
+  bikeType: MyString
+  size: MyString
+  gender: MyString

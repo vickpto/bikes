@@ -1,0 +1,61 @@
+<div class="row">
+  <div class="large-8 columns">
+    <h2>Noticias La Ciclería Café Taller</h2>
+  </div>
+</div>
+
+<div class="large-4 columns">
+
+  <% @articles.reverse_each do |article| %>
+
+  
+  <article>
+
+    <div class="row">
+      <div class="large-12 columns">
+        <h3><%=article.articleTitle%></h3>
+        <p><%= article.publicationDate %></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-8 columns">
+        <p align="justify"><%= article.summary %></p>
+        <dl class="sub-nav">
+          <dd><%= link_to 'Leer más', article %></dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-8 columns">
+        <dl class="sub-nav">
+          <%if user_signed_in? && current_user.userType == "Manager" %>
+          <dd><%= link_to 'Editar', edit_article_path(article), class: "radius button center" %></dd>
+          <dd><%= link_to 'Eliminar', article, class: "radius button center",data: { confirm: 'Estas seguro de eliminar esta noticia?'}, :method => :delete %></dd>
+          <%end%>
+        </dl>
+      </div>
+    </div>
+
+  </article>
+  
+  <br>
+  <div class="row">
+    <div class="large-12 columns"><hr/>
+    </div>
+  </div>
+  <% end %>
+  <br>
+  <%if user_signed_in? && current_user.userType == "Manager" %>
+  <div class="row">
+    <div class="small-4 large-centered columns"><a href="/articles/new" class="radius button center">Nueva noticia</a> </div>
+  </div>
+</div>
+
+<%end%>
+
+</div>
+
+<br>
+
+

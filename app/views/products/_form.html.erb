@@ -1,0 +1,68 @@
+<%= form_for(@product) do |f| %>
+<% if @product.errors.any? %>
+<div id="error_explanation">
+  <h2><%= pluralize(@product.errors.count, "error") %> prohibited this product from being saved:</h2>
+
+  <ul>
+    <% @product.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+
+<div class="field">
+  <%= f.label :productId %><br>
+  <%= f.number_field :productId %>
+</div>
+<div class="field">
+  <%= f.label :productReference %><br>
+  <%= f.text_field :productReference %>
+</div>
+<div class="field">
+  <%= f.label :productName %><br>
+  <%= f.text_field :productName %>
+</div>
+<div class="field">
+  <%= f.label :productTradeMark %><br>
+  <%= f.text_field :productTradeMark %>
+</div>
+<div class="field">
+  <%= f.label :productPrice %><br>
+  <%= f.number_field :productPrice %>
+</div>
+<div class="field">
+  <%= f.label :productStatus %><br>
+  <%= f.check_box :productStatus %>
+</div>
+<div class="field">
+  <%= f.label :productDescription %><br>
+  <%= f.text_field :productDescription %>
+</div>
+<% if @product.typeProduct == 'EQUIPMENT' %>
+<div class="field">
+  <%= f.label :typeProduct %><br>
+  <h4>ashdjalkshjkdaksldjahs</h4>
+  <%= f.text_field :typeProduct %>
+</div>
+<% end %>
+<div class="field">
+  <%= f.label :measures %><br>
+  <%= f.text_field :measures %>
+</div>
+<div class="field">
+  <%= f.label :bikeType %><br>
+  <%= f.text_field :bikeType %>
+</div>
+<div class="field">
+  <%= f.label :size %><br>
+  <%= f.text_field :size %>
+</div>
+<div class="field">
+  <%= f.label :gender %><br>
+  <%= f.text_field :gender %>
+</div>
+<div class="actions">
+  <%= f.submit %>
+</div>
+<% end %>

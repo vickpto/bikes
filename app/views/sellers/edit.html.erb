@@ -1,0 +1,141 @@
+<div class="row">
+	<div class="large-6 columns">
+		<h2>Editar Vendedor</h2>
+	</div>
+</div>
+
+<%= form_for(@seller) do |f| %>
+<% if @seller.errors.any? %>
+<div class="row">
+	<div class="small-8 large-centered columns">
+		<div data-alert class="alert-box alert radius">
+			<%= pluralize(@seller.errors.count, "error") %> no permite guardar la noticia
+			<ul>
+				<% @seller.errors.full_messages.each do |message| %>
+				<li><%= message %></li>
+				<% end %>
+			</ul>
+			<a href="#" class="close">&times;</a>
+		</div>
+	</div>
+</div>
+<% end %>  
+<div class="row">
+	<div class="small-8">
+		<div class="row">
+			<div class="small-3 columns">
+				<label for="right-label" class="right inline">Documento</label>
+			</div>
+			<div class="small-9 columns">
+				<%= f.number_field :document, autofocus: true %>
+			</div>
+		</div>
+	</div>
+</div>
+
+<p>            </p>
+
+<div class="row">
+	<div class="small-8">
+		<div class="row">
+			<div class="small-3 columns">
+				<label for="right-label" class="right inline">Nombre</label>
+			</div>
+			<div class="small-9 columns">
+				<%= f.text_field :username %>
+			</div>
+		</div>
+	</div>
+</div>
+
+<p>            </p>
+
+<div class="row">
+	<div class="small-8">
+		<div class="row">
+			<div class="small-3 columns">
+				<label for="right-label" class="right inline">Apellidos</label>
+			</div>
+			<div class="small-9 columns">
+				<%= f.text_field :userLastName %>
+			</div>
+		</div>
+	</div>
+</div>
+
+<p>            </p>
+
+<div class="row">
+	<div class="small-8">
+		<div class="row">
+			<div class="small-3 columns">
+				<label for="right-label" class="right inline">Numero telefonico</label>
+			</div>
+			<div class="small-9 columns">
+				<%= f.text_field :telephone %>
+			</div>
+		</div>
+	</div>
+</div>
+
+<p>            </p>
+
+<div class="row">
+	<div class="small-8">
+		<div class="row">
+			<div class="small-3 columns">
+				<label for="right-label" class="right inline">Correo electronico</label>
+			</div>
+			<div class="small-9 columns">
+				<%= f.email_field :email %>
+			</div>
+		</div>
+	</div>
+</div>
+<p></p>
+<div class="row">
+	<div class="small-8">
+		<div class="row">
+			<div class="small-3 columns">
+				<label for="right-label" class="right inline">Reiniciar contraseña</label>
+			</input>
+		</div>
+		<div class="small-9 columns">
+			<input type="checkbox" id="remember" name="remember"  onclick="validate()" />
+		</input>
+	</div>
+
+</div>
+</div>
+</div>
+<p></p>
+
+
+</div>
+<p></p>
+<div class="row">
+	<div class="small-4 large-centered columns"><%= f.submit "Guardar", class: "button success radius" %>
+	</div>
+</div>
+<p>            </p>
+<% end %>
+
+<div class="row">
+	<div class="large-9 columns">
+		<div class="actions">
+			<%= link_to 'Volver', sellers_path %>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+function validate() {
+	if (document.getElementById('remember').checked) {
+		alert("La contraseña del Vendedor será modificada a nombre.usuario");
+		<%= @reset=true %>
+	} else {
+		alert("La contraseña anterior del vendedor se conservara");
+		<%= @reset=false %>
+	}
+}
+</script>

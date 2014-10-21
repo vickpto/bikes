@@ -1,0 +1,101 @@
+<div class="row">
+  <div class="large-12 columns">
+    <div class="row">
+
+
+
+      <div class="large-12 columns">
+        <div class="panel radius">
+
+          <div class="row">
+            <div class="large-4 small-4 columns">
+
+              <h4>
+                Vendedor - <%= @seller.personId %> - <% if @seller.status == true%> Habilitado <% else %> Deshabilitado <% end %>
+              </h4>
+              <hr/>
+
+              <h5>
+                Nombre
+              </h5>            
+              <h5 class="subheader">
+                <%= @seller.username %> <%= @seller.userLastName %>
+              </h5>
+
+              <h5>
+                Documento
+              </h5>
+              <h5 class="subheader">
+                <%= @seller.document %>
+              </h5>
+
+              <h5>
+                Telefono
+              </h5>
+              <h5 class="subheader">
+                <%= @seller.telephone %>
+              </h5> 
+
+              <h5>
+                Correo Electronico
+              </h5>
+              <h5 class="subheader">
+                <%= @seller.email %>
+              </h5> 
+            </div>
+
+            <div class="large-8 small-8 columns">
+
+              <h4 align='center'>
+                Ventas
+              </h4>
+              <%if @sales.empty?  %>
+              <p>            </p>
+              <div class="row">
+                <div class="small-8 large-centered columns">
+                  <h4 class ="subheader">Aun no se ha registrado ninguna venta</h4>
+                </div>
+              </div>
+              <%else%>
+              <div class="small-12 large-centered columns">
+                <table>
+                  <thead>
+                    <tr>
+                      <th width="20">Id</th>
+                      <th width="50">Vendedor</th>
+                      <th width="50">Cliente</th>
+                      <th width="20">Fecha</th>
+                      <th>Salestatus</th>
+                      <th>Observaciones</th>
+                      <th colspan="3"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <% @sales.each do |sale| %>
+                    <tr>
+                      <td><%= sale.saleId %></td>
+                      <td><%= sale.sellerId %></td>
+                      <td><%= sale.clientId %></td>
+                      <td><%= sale.saleDate %></td>
+                      <td><%= sale.saleStatus %></td>
+                      <td><%= sale.note %></td>
+                      <td><%= link_to 'Show', sale %></td>
+                      <td><%= link_to 'Edit', edit_sale_path(sale) %></td>
+                      <td><%= link_to 'Destroy', sale, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                    </tr>
+                    <% end %>
+                  </tbody>
+                </table>
+              </div>
+              <br>
+              <% end %>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <%if false%>
+      <%= link_to 'Editar', edit_seller_path(@seller) %> |
+      <%end%>
+      <%= link_to '← Volver', sellers_path %>

@@ -1,0 +1,1 @@
+json.extract! @bike, :id, :productId, :productReference, :productName, :productTradeMark, :productImage, :productPrice, :productStatus, :productDescription, :measures, :bikeType, :created_at, :updated_at

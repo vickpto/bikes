@@ -1,0 +1,2 @@
+module ContractHistoriesHelper
+end

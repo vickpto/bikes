@@ -1,0 +1,111 @@
+<div class="panel">
+  <div class="row">
+    <div class="large-12 columns">
+      
+      <h2>Registrar Gerente</h2>    
+      <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= devise_error_messages! %>
+
+      <%=  f.hidden_field :userType, :value => "Manager" %>
+      <%=  f.hidden_field :personId, :value => 1 %>
+      
+      <%=  f.hidden_field :status, :value => "Enable" %>
+
+      <div class="row">
+        <div class="small-8">
+          <div class="row">
+            <div class="small-3 columns">
+              <label for="right-label" class="right inline">Nombres</label>
+            </div>
+            <div class="small-9 columns">
+              <%= f.text_field :username , autofocus: true, :required =>true,:maxlength =>50 %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>            </p>
+      <div class="row">
+        <div class="small-8">
+          <div class="row">
+            <div class="small-3 columns">
+              <label for="right-label" class="right inline">Apellidos</label>
+            </div>
+            <div class="small-9 columns">
+             <%= f.text_field :userLastName, :required =>true, :maxlength =>50%>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>            </p>
+      <div class="row">
+        <div class="small-8">
+          <div class="row">
+            <div class="small-3 columns">
+              <label for="right-label" class="right inline">Documento de Identificacion</label>
+            </div>
+            <div class="small-9 columns">
+               <%= f.text_field :document, :pattern=>'.{8,10}', :required=>true %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>            </p>
+      <div class="row">
+        <div class="small-8">
+          <div class="row">
+            <div class="small-3 columns">
+              <label for="right-label" class="right inline">Numero telefonico</label>
+            </div>
+            <div class="small-9 columns">
+               <%= f.text_field :telephone, :required =>true, :pattern=>'.{8,20}'%>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>            </p>
+      <div class="row">
+        <div class="small-8">
+          <div class="row">
+            <div class="small-3 columns">
+              <label for="right-label" class="right inline">Correo electrónico</label>
+            </div>
+            <div class="small-9 columns">
+               <%= f.email_field :email, :required=>true,:maxlength =>50, :pattern => '[^@]+@[^@]+\.[a-zA-Z]{2,6}'%>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>            </p>
+      <div class="row">
+        <div class="small-8">
+          <div class="row">
+            <div class="small-3 columns">
+              <label for="right-label" class="right inline">Contraseña</label>
+            </div>
+            <div class="small-9 columns">
+              <%= f.password_field :password, :required=>true,  autocomplete: "off" %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>            </p>
+      <div class="row">
+        <div class="small-8">
+          <div class="row">
+            <div class="small-3 columns">
+              <label for="right-label" class="right inline">Confirme su contraseña</label>
+            </div>
+            <div class="small-9 columns">
+              <%= f.password_field :password_confirmation, :required=>true,  autocomplete: "off" %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>            </p>
+      <div class="row">
+        <div class="small-4 large-centered columns"><%= f.submit "Enviar", class: "button success radius" %></div>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>

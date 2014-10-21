@@ -1,0 +1,133 @@
+<div class="panel ">
+	<div class="row">
+		<div class="large-12 columns">
+			<h2>Editar datos</h2>
+
+			<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+			<%= devise_error_messages! %>
+			<br>
+			<%if current_user.userType == 'Manager'%>
+			<div class="row">
+				<div class="small-8">
+					<div class="row">
+						<div class="small-3 columns">
+							<label for="right-label" class="right inline">Nombre</label>
+						</div>
+						<div class="small-9 columns">
+							<%= f.text_field :username , autofocus: true %>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p>            </p>
+			<div class="row">
+				<div class="small-8">
+					<div class="row">
+						<div class="small-3 columns">
+							<label for="right-label" class="right inline">Apellido</label>
+						</div>
+						<div class="small-9 columns">
+							<%= f.text_field :userLastName%>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p>            </p>
+			<div class="row">
+				<div class="small-8">
+					<div class="row">
+						<div class="small-3 columns">
+							<label for="right-label" class="right inline">Documento</label>
+						</div>
+						<div class="small-9 columns">
+							<%= f.text_field :document%>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p>            </p>
+			<div class="row">
+				<div class="small-8">
+					<div class="row">
+						<div class="small-3 columns">
+							<label for="right-label" class="right inline">Telefono</label>
+						</div>
+						<div class="small-9 columns">
+							<%= f.text_field :telephone%>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p>            </p>
+
+			<%end%>
+
+			<div class="row">
+				<div class="small-8">
+					<div class="row">
+						<div class="small-3 columns">
+							<label for="right-label" class="right inline">Correo Electronico</label>
+						</div>
+						<div class="small-9 columns">
+							<%= f.text_field :email%>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p>            </p>
+
+			<div class="row">
+				<div class="small-8">
+					<div class="row">
+						<div class="small-3 columns">
+							<label for="right-label" class="right inline">Contraseña</label>
+						</div>
+						<div class="small-9 columns">
+							<i>(dejar en blanco si no quiere cambiar la contraseña)</i>
+							<%= f.password_field :password, autocomplete: "off" %>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p>            </p>
+
+			<div class="row">
+				<div class="small-8">
+					<div class="row">
+						<div class="small-3 columns">
+							<label for="right-label" class="right inline">Confima tu contraseña</label>
+						</div>
+						<div class="small-9 columns">
+							<i>(dejar en blanco si no quiere cambiar la contraseña)</i>
+							<%= f.password_field :password_confirmation, autocomplete: "off" %>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p>            </p>
+
+			<div class="row">
+				<div class="small-8">
+					<div class="row">
+						<div class="small-3 columns">
+							<label for="right-label" class="right inline">Contraseña actual</label>
+						</div>
+						<div class="small-9 columns">
+							<i>(Digita tu contraseña actual )</i>
+							<%= f.password_field :current_password, autocomplete: "off" %>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p>            </p>
+			<div class="row">
+				<div class="small-4 small-left-centered columns"><%= link_to "← Volver", root_path  %>
+				</div>
+				<div class="small-4 small-centered columns"><%= f.submit "Actualizar", class: "button success radius" %>
+				</div>
+			</div>
+			<% end %>
+			
+		</div>
+	</div>
+</div>

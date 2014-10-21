@@ -1,0 +1,29 @@
+<h1>Listing contract_histories</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Personid</th>
+      <th>Contractdate</th>
+      <th>Finalcontractdate</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @contract_histories.each do |contract_history| %>
+      <tr>
+        <td><%= contract_history.personId %></td>
+        <td><%= contract_history.contractDate %></td>
+        <td><%= contract_history.finalContractDate %></td>
+        <td><%= link_to 'Show', contract_history %></td>
+        <td><%= link_to 'Edit', edit_contract_history_path(contract_history) %></td>
+        <td><%= link_to 'Destroy', contract_history, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Contract history', new_contract_history_path %>

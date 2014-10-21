@@ -1,0 +1,2 @@
+module AccesoryPartsHelper
+end

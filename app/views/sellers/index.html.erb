@@ -1,0 +1,57 @@
+<div class="panel">
+  <%if @sellers.empty?  %>
+  <p>            </p>
+  <div class="row">
+    <div class="small-8 large-centered columns">
+      <h1 align="center">Aun no se ha registrado ningun vendedor</h1>
+    </div>
+    <div class="small-2 large-centered columns"><%= link_to "Crear Vendedor", new_seller_path, class: "radius button center"%>  </div>
+  </div>
+  <%else%>
+  <div class="row">
+    <div class="small-12 large-centered columns">
+      <h1>Lista de vendedores - La Ciclería</h1>
+    </div>
+    <div class="small-12 large-centered columns">
+      <table>
+        <thead>
+          <tr>
+            <th width="50">Id</th>
+            <th width="20">Numero Documento</th>
+            <th width="300">Nombre</th>
+            <th width="200">Correo electronico</th>
+            <th width="100">Nro Telefonico</th>
+            <th width="220">Administración de vendedores</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <% @sellers.each do |seller| %>
+          <tr>
+            <td><%= seller.personId %></td>
+            <td><%= seller.document %></td>
+            <td><%= seller.username %>  <%= seller.userLastName %></td>
+            <td><%= seller.email %></td>
+            <td><%= seller.telephone %></td>
+            <td>
+                <%= link_to 'Ver', seller , class: "small button success centered"%>
+                <%= link_to 'Editar', edit_seller_path(seller), class: "small button success" %>
+                <% if seller.status == true %>
+                <%= link_to 'Deshabilitar', seller, method: :delete, class: "small button alert",data: { confirm: 'Estas seguro de deshabilitar este vendedor?'} %>
+                <%else%>
+                <%= link_to 'Habilitar', seller, method: :delete, class: "small button success"%>
+                <%end%>
+
+            </td>
+          </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+    <br>
+
+    <div class="small-4 large-centered columns"><%= link_to "Crear Vendedor", new_seller_path, class: "radius button center"%>  </div>
+    </div>
+</div>
+<%end%>
+</div>
