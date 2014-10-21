@@ -44,7 +44,7 @@
               <label for="right-label" class="right inline">Documento de Identificacion</label>
             </div>
             <div class="small-9 columns">
-               <%= f.text_field :document, :pattern=>'.{8,10}', :required=>true %>
+               <%= f.text_field :document, :pattern=>'[0-9]{8,10}', :required=>true %>
             </div>
           </div>
         </div>
