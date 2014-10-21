@@ -10,52 +10,17 @@
   </ul>
 </div>
 <% end %>
-
+<p align='center'>Creacion de venta 1/2</p>
 <div class="field">
   <br>Vendedor</br>
-  <%= f.collection_select :sellerId, @sellers, :personId, :dataSellers, include_blank: true, :required =>true %>
+  <%= f.collection_select :sellerId, @sellers, :personId, :dataSellers, :required =>true %>
 </div>
 
 <div class="field">
   <br>Cliente</br>
   
-  <%= f.collection_select :clientId, @clients, :personId, :dataClients, include_blank: true, :required =>true %>
+  <%= f.collection_select :clientId, @clients, :personId, :dataClients, :required =>true %>
 </div>
-
-<!--Tabla de productos -->
-<table>
-  <thead>
-    <tr>
-      <th width="50">Identificador</th>
-      <th width="300">Nombre producto</th>
-      <th width="300">Referencia</th>
-      
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-     <% @items.each do |item| %>
-     <tr>
-      <td><%= item.saleId %></td>
-      <td><%= item.productId %></td>
-      <td><%= item.itemAmount%></td>
-      <%end%>
-
-    </tr>
-
-  </tbody>
-</table>
-
-<table id='myTable'>
-<tr><td>author's first name</td><td>author's last name</td></tr>
-<tr><td><input type='text' name='first_name' />
-
-</td><td><input type='text' name='last_name' /></td></tr>
-</table>
-<a href='' onclick='$("<tr><td><input type=\"text\" name=\"first_name2\" /></td><td><input type=\"text\" name=\"last_name2\"</td></tr>").appendTo($("#myTable")); return false;'>Add Author</a>
-
-<!-- Boton para agregar productos-->
-<a href="#" data-reveal-id="elegirProductos" class="radius button center">Elegir productos </a>
 
 <div class="field">
   <%= f.label :saleDate %><br>
@@ -67,43 +32,8 @@
   <%= f.text_field :note, :required=>true, :maxlength =>300 %>
 </div>
 <div class="actions">
-  <%= f.submit class: "radius button center"%>
+  <%= f.submit "Siguiente", class: "radius button center"%>
 </div>
 <% end %>
-
-
-<div id="elegirProductos" class="reveal-modal" data-reveal>
-  <%= form_for(@item) do |f| %>
-  <% if @item.errors.any? %>
-  <div id="error_explanation">
-    <h2><%= pluralize(@item.errors.count, "error") %> prohibited this item from being saved:</h2>
-
-    <ul>
-      <% @item.errors.full_messages.each do |message| %>
-      <li><%= message %></li>
-      <% end %>
-    </ul>
-  </div>
-  <% end %>
-
-  <%= f.hidden_field :saleId, :value => @saleId %>
-
-  <div class="field">
-    Producto<br>
-    
-    <%= f.collection_select :productId, @products, :productId, :productName, include_blank: true, :required =>true %>
-  </div>
-  <div class="field">
-    Cantidades<br>
-    <%= f.number_field :itemAmount, :required =>true %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-  <% end %>
-
-  <a class="close-reveal-modal">&#215;</a>
-
-</div>
 
 

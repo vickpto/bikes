@@ -13,7 +13,9 @@ class ItemsController < ApplicationController
 
   def new
     @item = Item.new
-
+    @products=Product.all
+    @items=Item.all
+    @saleId=params[:saleId]
     
     
   end
@@ -23,16 +25,11 @@ class ItemsController < ApplicationController
 
   def create
     @item = Item.new(item_params)
-    if Sale.all.nil?
-      @saleId=1
-    else
-      @saleId = Sale.all.count+1
-    end
-    @item.saleId=@saleId
+    #@item.saleId =@saleId  
     @item.save
     respond_to do |format|
       if @item.save
-        format.html { redirect_to new_sale_path }
+        format.html { redirect_to new_item_path(:saleId => @item.saleId) }
         format.json { render :show, status: :created, location: @item }
       else
         format.html { render :new }
