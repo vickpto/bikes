@@ -1,5 +1,5 @@
 class CatalogController < ApplicationController
   def index
-  	@products = Product.all
+  	@productsB = Product.where(:typeProduct => 'BIKE')
   end
 end
