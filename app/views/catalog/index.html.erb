@@ -1,11 +1,15 @@
+<br>
+<br>
+
 <div class="row">
   <div class="large-4 small-12 columns">
     <div class="panel">
       <ul class="side-nav">
-        <li><a href="#">Link 1</a></li>
-        <li><a href="#">Link 2</a></li>
-        <li><a href="#">Link 3</a></li>
-        <li><a href="#">Link 4</a></li>
+        <li><a href="#">Ropa deportiva</a></li>
+        <hr>
+        <li><a href="#">Bicicletas</a></li>
+        <hr>
+        <li><a href="#">Repuestos - Accesorios</a></li>      
       </ul>
     </div>
     <a href="#">
@@ -18,18 +22,21 @@
 
   <div class="large-8 columns">
     <div class="row">
-
-      <% @bikes.each do |bike| %>
+      <% if @productsB.empty? %>
+      <h3>Aun no se ha registrado ningun producto</h3>
+      <% else%>
+      <% @productsB.each do |product| %>
       <div class="large-4 small-6 columns">
-        <%= image_tag bike.image.url%>
-
+        <%= image_tag product.image.url%>
         <div class="panel">
-          <h5><%= bike.productName %> - <%= bike.productTradeMark %></h5>
-          <h6 class="subheader"><%= bike.productPrice %> COP$</h6>
-          <%= link_to 'Ver', bike , class: "small button success centered"%>
+          <h5><%= product.productName %> - <%= product.productTradeMark %></h5>
+          <h6 class="subheader"><%= product.productPrice %> COP$</h6>
+          <%= link_to 'Ver', bike_path(product) , class: "small button success centered"%>
         </div>
       </div>
       <% end %>
+      <% end %>
+      
 
       <div class="row">
         <div class="large-12 columns">
