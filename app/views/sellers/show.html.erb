@@ -41,7 +41,8 @@
               </h5>
               <h5 class="subheader">
                 <%= @seller.email %>
-              </h5> 
+              </h5>
+              <%= link_to 'Editar', edit_seller_path(@seller) , class: "radius button center"%>  
             </div>
 
             <div class="large-8 small-8 columns">

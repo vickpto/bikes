@@ -13,11 +13,6 @@
       </ul>
     </div>
 
-    <a href="#">
-      <div class="panel callout radius">
-        <h6>99  items in your cart</h6>
-      </div>
-    </a>
 
   </div>
 
@@ -44,6 +39,7 @@
           <% end %>
         </div>
       </a>
+
 
       <a name="equipment">
         <div id="equipment">
@@ -79,7 +75,7 @@
             <div class="panel">
               <h5><%= product.productName %> - <%= product.productTradeMark %></h5>
               <h6 class="subheader"><%= product.productPrice %> COP</h6>
-              <%= link_to 'Ver mas', accesory_parts_path(product) , class: "small button center"%>
+              <%= link_to 'Ver mas', accesory_part_path(product) , class: "small button center"%>
             </div>
           </div>
           <% end %>
