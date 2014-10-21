@@ -50,7 +50,7 @@ def create
     :password_confirmation => @seller.password)
   @user.save 
   respond_to do |format|
-    if @seller.save
+    if @user.save
       format.html { redirect_to @seller, notice: 'Vendedor creado correctamente.' }
       format.json { render :show, status: :created, location: @seller }
     else

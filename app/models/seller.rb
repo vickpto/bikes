@@ -7,7 +7,7 @@ class Seller < ActiveRecord::Base
   validates_uniqueness_of :document , :message => " ya ha sido registrado "
   validates_length_of :document, :within => 8..11 
   validates_presence_of :telephone, :message => " no puede ser un campo vacio"
-  validates_length_of :telephone, :within => 8..10
+  validates_length_of :telephone, :within => 6..20
   validates_presence_of :email, :message => " no puede ser un campo vacio"
   validates_presence_of :password, :message => " no puede ser un campo vacio"
 

@@ -9,7 +9,7 @@
       <%=  f.hidden_field :userType, :value => "Manager" %>
       <%=  f.hidden_field :personId, :value => 1 %>
       
-      <%=  f.hidden_field :status, :value => "Enable" %>
+      <%=  f.hidden_field :status, :value => 1 %>
 
       <div class="row">
         <div class="small-8">
@@ -44,7 +44,7 @@
               <label for="right-label" class="right inline">Documento de Identificacion</label>
             </div>
             <div class="small-9 columns">
-               <%= f.text_field :document, :pattern=>'[0-9]{8,10}', :required=>true %>
+               <%= f.text_field :document, :pattern=>'[0-9]{8,11}', :maxlength => 11,  :required=>true %>
             </div>
           </div>
         </div>
@@ -57,7 +57,7 @@
               <label for="right-label" class="right inline">Numero telefonico</label>
             </div>
             <div class="small-9 columns">
-               <%= f.text_field :telephone, :required =>true, :pattern=>'.{8,20}'%>
+               <%= f.text_field :telephone, :required =>true, :maxlength=>20, :pattern=>'.{6,20}'%>
             </div>
           </div>
         </div>
@@ -83,7 +83,7 @@
               <label for="right-label" class="right inline">Contraseña</label>
             </div>
             <div class="small-9 columns">
-              <%= f.password_field :password, :required=>true,  autocomplete: "off" %>
+              <%= f.password_field :password,:pattern=>'.{8,50}', :required=>true,  autocomplete: "off" %>
             </div>
           </div>
         </div>
@@ -96,7 +96,7 @@
               <label for="right-label" class="right inline">Confirme su contraseña</label>
             </div>
             <div class="small-9 columns">
-              <%= f.password_field :password_confirmation, :required=>true,  autocomplete: "off" %>
+              <%= f.password_field :password_confirmation, :pattern=>'.{8,50}', :required=>true,  autocomplete: "off" %>
             </div>
           </div>
         </div>
