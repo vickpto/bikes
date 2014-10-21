@@ -16,6 +16,7 @@ class SalesController < ApplicationController
     @item=Item.new
     @sellers=Seller.all
     @clients=Client.all
+    @products=Product.all
     
   end
 
@@ -78,3 +79,4 @@ class SalesController < ApplicationController
     params.require(:sale).permit(:saleId, :sellerId, :clientId, :saleDate, :saleStatus, :note)
   end
 end
+
