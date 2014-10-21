@@ -1,31 +1,57 @@
 <%= form_for(@item) do |f| %>
-  <% if @item.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@item.errors.count, "error") %> prohibited this item from being saved:</h2>
+<% if @item.errors.any? %>
+<div id="error_explanation">
+  <h2><%= pluralize(@item.errors.count, "error") %> prohibited this item from being saved:</h2>
 
-      <ul>
-      <% @item.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+  <ul>
+    <% @item.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+<p align='center'>Creacion de venta 2/2</p>
 
-  <div class="field">
-    <%= f.label :saleId %><br>
-    <%= f.number_field :saleId %>
+<div class="field">
+  Producto<br>
+  
+  <%= f.hidden_field :saleId, :value => @saleId%>
+  <%= f.collection_select :productId, @products, :productId, :productName, include_blank: true, :required =>true %>
+</div>
+<div class="field">
+  Cantidades<br>
+  <%= f.number_field :itemAmount, :required =>true %>
+</div>
+<div class="actions">
+  <!--Tabla de productos -->
+<table>
+  <thead>
+    <tr>
+      <th width="50">Identificador</th>
+      <th width="300">Nombre producto</th>
+      <th width="300">Referencia</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+     <% @items.each do |item| %>
+     
+     
+     
 
-  </div>
-  <div class="field">
-    Producto<br>
-    <%= f.number_field :productId %>
-    <%= f.collection_select :productId, @products, :productId, :productName, include_blank: true, :required =>true %>
-  </div>
-  <div class="field">
-    Cantidades<br>
-    <%= f.number_field :itemAmount, :required =>true %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+     <tr>
+      <%if item.saleId.to_s == @saleId.to_s%>
+      <td><%= item.saleId %></td>
+      <td><%= item.productId %></td>
+      <td><%= item.itemAmount%></td>
+      <%end%>
+
+     <% end %>
+    </tr>
+
+  </tbody>
+</table>
+  <%= f.submit %>
+</div>
 <% end %>
