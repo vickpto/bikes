@@ -11,7 +11,7 @@ class User < ActiveRecord::Base
   validates_uniqueness_of :document , :message => " ya ha sido registrado "
   validates_length_of :document, :within => 8..11 
   validates_presence_of :telephone, :message => " no puede estar vacio"
-  validates_length_of :telephone, :within => 8..11
+  validates_length_of :telephone, :within => 6..20
   
   def user_params
       params.require(:user).permit(:username,:userLastName, :document, :telephone, :userType, :status, :email, :password, :password_confirmation)

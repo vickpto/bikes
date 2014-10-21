@@ -87,7 +87,6 @@ ActiveRecord::Schema.define(version: 20141020184336) do
     t.string  "userLastName",          limit: 50, null: false
     t.string  "email",                 limit: 50, null: false
     t.string  "password",                         null: false
-    t.string  "password_confirmation",            null: false
     t.string  "telephone",             limit: 20, null: false
     t.string  "userType",              limit: 10, null: false
     t.boolean "status",                           null: false
