@@ -34,14 +34,25 @@
   </thead>
   <tbody>
     <tr>
-      <td>Content Goes Here</td>
-      <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
-      <td>Content Goes Here</td>
-      <td>Content Goes Here</td>
+     <% @items.each do |item| %>
+     <tr>
+      <td><%= item.saleId %></td>
+      <td><%= item.productId %></td>
+      <td><%= item.itemAmount%></td>
+      <%end%>
+
     </tr>
-  
+
   </tbody>
 </table>
+
+<table id='myTable'>
+<tr><td>author's first name</td><td>author's last name</td></tr>
+<tr><td><input type='text' name='first_name' />
+
+</td><td><input type='text' name='last_name' /></td></tr>
+</table>
+<a href='' onclick='$("<tr><td><input type=\"text\" name=\"first_name2\" /></td><td><input type=\"text\" name=\"last_name2\"</td></tr>").appendTo($("#myTable")); return false;'>Add Author</a>
 
 <!-- Boton para agregar productos-->
 <a href="#" data-reveal-id="elegirProductos" class="radius button center">Elegir productos </a>
@@ -64,18 +75,18 @@
 <div id="elegirProductos" class="reveal-modal" data-reveal>
   <%= form_for(@item) do |f| %>
   <% if @item.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@item.errors.count, "error") %> prohibited this item from being saved:</h2>
+  <div id="error_explanation">
+    <h2><%= pluralize(@item.errors.count, "error") %> prohibited this item from being saved:</h2>
 
-      <ul>
+    <ul>
       <% @item.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
+      <li><%= message %></li>
       <% end %>
-      </ul>
-    </div>
+    </ul>
+  </div>
   <% end %>
 
- <%= f.hidden_field :sale_id, :value => @sale.saleId %>
+  <%= f.hidden_field :saleId, :value => @saleId %>
 
   <div class="field">
     Producto<br>
@@ -89,7 +100,7 @@
   <div class="actions">
     <%= f.submit %>
   </div>
-<% end %>
+  <% end %>
 
   <a class="close-reveal-modal">&#215;</a>
 

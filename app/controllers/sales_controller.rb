@@ -13,6 +13,7 @@ class SalesController < ApplicationController
 
   def new
     @sale = Sale.new
+    @items=Item.all
     @item=Item.new
     @sellers=Seller.all
     @clients=Client.all
@@ -26,14 +27,10 @@ class SalesController < ApplicationController
   def create
     @sale = Sale.new(sale_params)
     @sale.saleStatus=true
-    if Sale.all.nil?
-      @sale.saleId=1
-    else
-      @sale.saleId = Sale.all.count+1
-    end
     @sale.save
     respond_to do |format|
       if @sale.save
+
         format.html { redirect_to @sale, notice: 'Venta creada correctamente.' }
         format.json { render :show, status: :created, location: @sale }
       else

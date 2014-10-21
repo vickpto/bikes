@@ -8,12 +8,13 @@ class ItemsController < ApplicationController
   end
 
   def show
-    
+
   end
 
   def new
     @item = Item.new
-    @bikes= Bike.new
+
+    
     
   end
 
@@ -22,10 +23,16 @@ class ItemsController < ApplicationController
 
   def create
     @item = Item.new(item_params)
+    if Sale.all.nil?
+      @saleId=1
+    else
+      @saleId = Sale.all.count+1
+    end
+    @item.saleId=@saleId
     @item.save
     respond_to do |format|
       if @item.save
-        format.html { redirect_to @item, notice: 'Item fue creado correctamente.' }
+        format.html { redirect_to new_sale_path }
         format.json { render :show, status: :created, location: @item }
       else
         format.html { render :new }
@@ -55,11 +62,11 @@ class ItemsController < ApplicationController
   end
 
   private
-    def set_item
-      @item = Item.find(params[:id])
-    end
+  def set_item
+    @item = Item.find(params[:id])
+  end
 
-    def item_params
-      params.require(:item).permit(:saleId, :productId, :itemAmount)
-    end
+  def item_params
+    params.require(:item).permit(:saleId, :productId, :itemAmount)
+  end
 end
