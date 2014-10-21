@@ -75,13 +75,13 @@ class ProductsController < ApplicationController
           format.json { render :show, status: :ok, location: @product }
         end
         if @product.typeProduct == 'BIKE'
-          format.html { redirect_to bike_path(@product), notice: 'Bicicleta creada correctamente.' }
+          format.html { redirect_to bike_path(@product), notice: 'Bicicleta modificada correctamente.' }
           format.json { render :show, status: :ok, location: @product }
 
         end
         if @product.typeProduct == 'ACCESORY' || @product.typeProduct == 'SPARE'
 
-          format.html { redirect_to accesory_part_path(@product), notice: 'Accesorio - Repuesto creado correctamente.' }
+          format.html { redirect_to accesory_part_path(@product), notice: 'Accesorio-Repuesto modificado correctamente.' }
           format.json { render :show, status: :ok, location: @product }
         end
       else

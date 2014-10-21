@@ -20,7 +20,7 @@
         <div class="panel">
           <h5>Referencia</h5>
           <h6 class="subheader"><%= @product.productReference %></h6>
-          <%= link_to 'Volver', products_path , class: "small button radius"%>
+          <%= link_to 'Volver', bikes_path , class: "small button radius"%>
         </div>
       </div>
 
@@ -36,7 +36,7 @@
             Deshabilitado
             <%end%>
           </h6>
-          <%= link_to 'Editar', edit_product_path(@product) , class: "small button success radius"%> 
+          <%= link_to 'Editar', edit_bike_path(@product) , class: "small button success radius"%> 
         </div>
       </div>
       <%end%>
