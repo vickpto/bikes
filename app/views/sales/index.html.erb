@@ -1,5 +1,5 @@
 <div class="panel">
-  <%if @sales.empty?  %>
+  <%if @sales.nil?  %>
   <p>            </p>
   <div class="row">
     <div class="small-8 large-centered columns">
@@ -15,27 +15,25 @@
       <table>
         <thead>
           <tr>
-            <th width="20">Id</th>
-            <th width="50">Vendedor</th>
-            <th width="50">Cliente</th>
+            <th width="20">Id de Venta</th>
+            <th width="50">Nombre Vendedor</th>
+            <th width="50">Nombre Cliente</th>
             <th width="20">Fecha</th>
-            <th>Salestatus</th>
-            <th>Observaciones</th>
+             <th width="100">Observaciones</th>
             <th colspan="3"></th>
           </tr>
         </thead>
         <tbody>
           <% @sales.each do |sale| %>
           <tr>
-            <td><%= sale.saleId %></td>
-            <td><%= sale.sellerId %></td>
-            <td><%= sale.clientId %></td>
-            <td><%= sale.saleDate %></td>
-            <td><%= sale.saleStatus %></td>
-            <td><%= sale.note %></td>
-            <td><%= link_to 'Show', sale %></td>
-            <td><%= link_to 'Edit', edit_sale_path(sale) %></td>
-            <td><%= link_to 'Destroy', sale, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <td><%= sale[0]%></td>
+            <td><%= sale[1] %></td>
+            <td><%= sale[2] %></td>
+            <td><%= sale[3] %></td>
+            <td><%= sale[4] %></td>
+            <td><%= link_to 'Show', sale_path(:id =>sale[0]) %></td>
+            <td><%= link_to 'Edit', edit_sale_path(:id =>sale[0]) %></td>
+            <td><%= link_to 'Destroy', sale_path(sale), method: :delete, data: { confirm: 'Are you sure?' } %></td>
           </tr>
           <% end %>
         </tbody>
