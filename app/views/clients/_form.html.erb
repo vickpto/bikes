@@ -79,7 +79,7 @@
         <label for="right-label" class="right inline">Fecha de nacimiento</label>
       </div>
       <div class="small-9 columns">
-        <%= f.date_select :birthDay, :required =>true %>
+        <%= f.date_select :birthDay, :required =>true , start_year: 1940%>
       </div>
     </div>
   </div>

@@ -12,46 +12,78 @@
 <% end %>
 <p align='center'>Creacion de venta 2/2</p>
 
-<div class="field">
-  Producto<br>
-  
-  <%= f.hidden_field :saleId, :value => @saleId%>
-  <%= f.collection_select :productId, @products, :productId, :productName, include_blank: true, :required =>true %>
-</div>
-<div class="field">
-  Cantidades<br>
-  <%= f.number_field :itemAmount, :required =>true %>
-</div>
-<div class="actions">
-  <!--Tabla de productos -->
-<table>
-  <thead>
-    <tr>
-      <th width="50">Identificador</th>
-      <th width="300">Nombre producto</th>
-      <th width="300">Referencia</th>
-      
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-     <% @items.each do |item| %>
-     
-     
-     
+<%= f.hidden_field :saleId, :value => @saleId%>
 
-     <tr>
-      <%if item.saleId.to_s == @saleId.to_s%>
-      <td><%= item.saleId %></td>
-      <td><%= item.productId %></td>
-      <td><%= item.itemAmount%></td>
-      <%end%>
-
-     <% end %>
-    </tr>
-
-  </tbody>
-</table>
-  <%= f.submit %>
+<div class="row">
+  <div class="small-8">
+    <div class="row">
+      <div class="small-3 columns">
+        <label for="right-label" class="right inline">Producto</label>
+      </div>
+      <div class="small-9 columns">
+        <%= f.collection_select :productId, @products, :productId, :productName, include_blank: true, :required =>true %>
+      </div>
+    </div>
+  </div>
 </div>
-<% end %>
+<br>
+
+<div class="row">
+  <div class="small-8">
+    <div class="row">
+      <div class="small-3 columns">
+        <label for="right-label" class="right inline">Cantidades</label>
+      </div>
+      <div class="small-9 columns">
+        <%= f.number_field :itemAmount, :required =>true %>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+
+<div class="row">
+  <div class="small-6 columns"><%= f.submit "Agregar mas productos", class: "radius button center"%>
+  </div>
+  <div class="small-6 columns"><%= f.submit "Terminar venta", class: "radius button center"%>
+  </div>
+</div>
+
+
+<br>
+<div class="row">
+  <div class="small-12 large-centered columns">
+    <h1>Lista de productos en esta compra</h1>
+  </div>
+
+  <div class="small-12 large-centered columns">
+    <!--Tabla de productos -->
+    <table>
+      <thead>
+        <tr>
+          <th width="50">Id</th>
+          <th width="300">Nombre producto</th>
+          <th width="300">Referencia</th>
+          <th> Cantidad</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+         <% @items.each do |item| %>
+         <tr>
+          <%if item.saleId.to_s == @saleId.to_s%>
+          <td><%= item.saleId %></td>
+          <td><%= item.productId %></td>
+          <td><%= item.itemAmount%></td>
+          <td>cantidad</td>
+          <%end%>
+          <% end %>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br>
+
+  <% end %>

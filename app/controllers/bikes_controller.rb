@@ -15,7 +15,7 @@ class BikesController < ApplicationController
 
 	def show
 
-	end
+	endp
 
 	def new
 		@product = Product.new

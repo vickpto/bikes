@@ -11,29 +11,46 @@
 </div>
 <% end %>
 <p align='center'>Creacion de venta 1/2</p>
-<div class="field">
-  <br>Vendedor</br>
-  <%= f.collection_select :sellerId, @sellers, :personId, :dataSellers, :required =>true %>
+
+<%= f.hidden_field :sellerId, :value => current_user.personId%>
+<%= f.hidden_field :saleDate, :value => Time.now%>
+
+<div class="row">
+  <div class="small-8">
+    <div class="row">
+      <div class="small-3 columns">
+        <label for="right-label" class="right inline">Cliente</label>
+      </div>
+      <div class="small-9 columns">
+        <%= f.collection_select :clientId, @clients, :personId, :dataClients, :required =>true %>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+
+<div class="row">
+  <div class="small-8">
+    <div class="row">
+      <div class="small-3 columns">
+        <label for="right-label" class="right inline">Observaciones</label>
+      </div>
+      <div class="small-9 columns">
+        <%= f.text_field :note, :required=>true, :maxlength =>300 %>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+
+<div class="row">
+  <div class="small-4 large-centered columns"><%= f.submit "Siguiente", class: "radius button center"%>
+  </div>
 </div>
 
-<div class="field">
-  <br>Cliente</br>
-  
-  <%= f.collection_select :clientId, @clients, :personId, :dataClients, :required =>true %>
-</div>
 
-<div class="field">
-  <%= f.label :saleDate %><br>
-  <%= f.date_select :saleDate, :required =>true%>
-</div>
 
-<div class="field">
-  <%= f.label :note %><br>
-  <%= f.text_field :note, :required=>true, :maxlength =>300 %>
-</div>
-<div class="actions">
-  <%= f.submit "Siguiente", class: "radius button center"%>
-</div>
+
 <% end %>
 
 
