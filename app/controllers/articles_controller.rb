@@ -2,10 +2,9 @@ class ArticlesController < ApplicationController
   before_action :set_article, only: [:show, :edit, :update, :destroy]
   respond_to :html, :xml, :json
 
-  before_filter :authenticate_user!
+  before_filter :authenticate_user!, only: [:new, :edit, :update, :destroy]
   def index
     @articles = Article.all
-    
   end
 
   def show

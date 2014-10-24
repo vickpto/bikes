@@ -2,7 +2,7 @@ class BikesController < ApplicationController
 	before_action :set_product, only: [:show, :edit, :update, :destroy]
 	respond_to :html, :xml, :json
 
-	before_filter :authenticate_user!
+	before_filter :authenticate_user!, only: [:new, :edit, :update, :destroy]
 	def index
 		@products = Product.all
 		respond_to do |format|
@@ -15,7 +15,7 @@ class BikesController < ApplicationController
 
 	def show
 
-	endp
+	end
 
 	def new
 		@product = Product.new
