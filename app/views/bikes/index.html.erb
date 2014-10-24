@@ -1,3 +1,5 @@
+<%if user_signed_in?%>
+
 <div class="panel">
   <%if @products.empty?  %>
   <p>            </p>
@@ -62,16 +64,63 @@
     </div>
     <br>
     <div class="small-4 large-centered columns">
-    <%if user_signed_in? && current_user.userType == "Seller"%>
-    <%= link_to 'Nueva Bicicleta', new_bike_path , class: "radius button center"%> 
-    <% end %>
+      <%if user_signed_in? && current_user.userType == "Seller"%>
+      <%= link_to 'Nueva Bicicleta', new_bike_path , class: "radius button center"%> 
+      <% end %>
 
-    <%if user_signed_in? && current_user.userType == "Manager"%>
-    <%= link_to 'Generar Reporte', bikes_path(:pdf) , class: "radius button center"%>
-    <% end %>
-  </div>
+      <%if user_signed_in? && current_user.userType == "Manager"%>
+      <%= link_to 'Generar Reporte', bikes_path(:pdf) , class: "radius button center"%>
+      <% end %>
+    </div>
   </div>
 </div>
 <%end%>
 </div>
+
+<% else %>
+
+<div class="row">
+  <div class="large-12 columns">
+    <div class="hide-for-small">
+      <div id="featured">
+        <img src="/images/parked-bike3.jpg" alt="Bicis">
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="small-12 show-for-small"><br>
+        <img src="/images/parked-bike3.jpg"/>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+
+<div class="row">
+  <div class="large-12 columns">
+    <div class="row">
+
+      <% @products.each do |product| %>
+      <% if product.typeProduct == 'BIKE'%>
+
+      <div class="large-3 small-6 columns">
+        <%= image_tag product.image.url%>
+        <div class="panel">
+          <h6><%= product.productName %></h6>
+          <p><%= product.productTradeMark %> - <%= product.productPrice %> COP</p>
+          <%= link_to 'Ver más', bike_path(product) , class: "small button center"%>
+        </div>
+      </div>
+
+      <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
+<% end %>
+
 

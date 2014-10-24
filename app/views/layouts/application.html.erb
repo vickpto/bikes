@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="sp">
+<link rel="shortcut icon" href="/images/favicon.ico" />
 <head>
  <meta charset="utf-8" />
 
@@ -7,28 +8,28 @@
  <!-- <meta http-equiv="X-UA-Compatible" content="IE=7" /> -->
  <!-- Set the viewport width to device width for mobile -->
  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
- <title><%= content_for?(:title) ? yield(:title) : "BIKESIS" %></title>
+ <title><%= content_for?(:title) ? yield(:title) : "La Ciclería Café Taller" %></title>
 
  <%= stylesheet_link_tag    "application" %>
  <%= javascript_include_tag "vendor/custom.modernizr" %>
  <%= csrf_meta_tags %>
  <%= javascript_include_tag "application" %>
+ 
  <style type="text/css">
  body{font-family:'Raleway',sans-serif;font-size:18px;}
  hr{text-align:center;margin:0 auto;opacity:0.5;}
- ul{text-transform:uppercase;}
  ul.inline-list.right{text-transform:none;}
  ul.inline-list.right a{color:#000;}
  ul.inline-list.right a:hover{color:rgba(0,0,0,0.5);}
- h1{font-family:'American Typewriter','Courier New',Courier,Monaco,mono;font-size:32px;color:#fff;line-height:28px;margin-top:16px;margin-bottom:0px;text-align:center;}
- h2{font-family:'American Typewriter','Courier New',Courier,Monaco,mono;color:#fff;font-size:36px;line-height:34px;}
+
+ h1{font-family: Verdana, Geneva, sans-serif;font-size:32px;color:#fff;line-height:28px;margin-top:16px;margin-bottom:0px;text-align:center;}
+ h2{font-family: Verdana, Geneva, sans-serif;color:#FF8000;font-size:26px;line-height:34px;}
  .columns.large-centered{padding-left:5px;padding-right:5px;}
  @media only screen and (max-width: 40em) {.columns.large-centered{font-size:13px;}}@media only screen and (min-width: 40.063em) {.columns.large-centered{font-size:14px;}}
  .about-box{color:#fff;}
  .black-box{background-color:rgba(0,0,0,0.55);padding:35px;font-weight:900;}
  .black-box p{font-weight:900;}
- .secondary.small.button{background-color:transparent;color:#fff;border:2px #fff solid;border-radius:5px;padding:15px 50px 15px 50px;margin:0;}
+ .secondary.small.button{background-color:transparent;color:#fff;border:2px #FF8000 solid;border-radius:5px;padding:15px 50px 15px 50px;margin:0;}
  .secondary.small.button:hover{background-color:rgba(255,255,255,0.5);}
  .row .main-wrapper{color:#fff;}
  .about-content{background-color:#fff;box-shadow:2px 2px 10px rgba(0,0,0,0.1);}
@@ -55,8 +56,8 @@
 
         <li class="name">
           <h1>
-            <a href="#">
-              CICLERIA CAFE TALLER
+            <a href="/">
+              <img src="/images/principal.png">
             </a>
           </h1>
         </li>
@@ -74,7 +75,6 @@
           <li class="has-dropdown">
             <a href="#">Noticias</a>
             <ul class="dropdown">
-              <li><label>Administración de noticias</label></li>
               <li><a href="/articles/new/">Crear Noticia</a></li>
               <li class="divider"></li>
               <li><a href="/articles/">Ver noticias</a></li>
@@ -85,24 +85,17 @@
           <li class="has-dropdown">
             <a href="#">Vendedores</a>
             <ul class="dropdown">
-              <li><label>Administración de vendedores</label></li>
               <li><a href="/sellers/new/">Crear Vendedor</a></li>
               <li class="divider"></li>
               <li><a href="/sellers">Listar vendedores</a></li>
               <li class="divider"></li>
               <li><%= link_to 'Generar reporte de vendedores', sellers_path(:pdf) %></li>
               <li class="divider"></li>
-
-              
-
-
-
             </ul>
           </li>
           <li class="has-dropdown">
             <a href="#">Ventas</a>
             <ul class="dropdown">
-              <li><label>Administrar ventas</label></li>
               <li><a href="/sales/">Consultar ventas</a></li>
               <li class="divider"></li>
               <li><a href="/">Generar reporte de ventas</a></li>
@@ -113,11 +106,8 @@
           <li class="has-dropdown">
             <a href="#">Productos</a>
             <ul class="dropdown">
-              <li><label>Productos destacados</label></li>
               <li class="divider"></li>
               <li><a href="/catalog/index">Catalogo</a></li>
-              <li class="divider"></li>
-              <li><label>Administración de productos</label></li>
               <li class="divider"></li>
               <li class="has-dropdown">
                 <a href="#" class="">Bicicletas</a>
@@ -143,14 +133,12 @@
                 </ul>
               </li>
               <li class="divider"></li>
-              <li><label> Información de cantidades</label></li>
               <li><a href="/inventories/">Inventario de productos</a></li>
             </ul>
             <li class="divider"></li>
             <li class="has-dropdown">
               <a href="#">Clientes</a>
               <ul class="dropdown">
-                <li><label>Administración de clientes</label></li>
                 <li><a href="/clients/">Listar clientes</a></li>
                 <li class="divider"></li>
                 <li><%= link_to 'Generar reporte de Clientes', clients_path(:pdf) %></li>
@@ -176,10 +164,8 @@
               <a href="#">Cuenta</a>
               <ul class="dropdown">
                 <li class="divider"></li>
-                <li class="divider"></li>
                 <li><%= link_to "Modificar datos",  edit_user_registration_path %></li>
                 <li class="divider"></li>
-                <li><label> Salir</label></li>
                 <li><%= link_to "Cerrar Sesión", destroy_user_session_path, method: :delete %></li>
               </ul>
             </li>
@@ -195,7 +181,6 @@
           <li class="has-dropdown">
             <a href="#">Ventas</a>
             <ul class="dropdown">
-              <li><label>Administrar ventas</label></li>
               <li><%= link_to "Nueva Venta",  new_sale_path %></li>
               <li class="divider"></li>
               <li><a href="/sales/">Consultar ventas</a></li>
@@ -206,11 +191,8 @@
           <li class="has-dropdown">
             <a href="#">Productos</a>
             <ul class="dropdown">
-              <li><label>Productos destacados</label></li>
               <li class="divider"></li>
               <li><a href="/catalog/index">Catalogo</a></li>
-              <li class="divider"></li>
-              <li><label>Administración de productos</label></li>
               <li class="divider"></li>
               <li class="has-dropdown">
                 <a href="#" class="">Bicicletas</a>
@@ -234,156 +216,118 @@
                 <ul class="dropdown">
                   <li><a href="/accesory_parts/new">Nuevo Repuesto - Accesorio</a></li>
                   <li><a href="/accesory_parts/">Listar Repuestos y accesorios</a></li>
+                </ul>
+              </li>
+              <li class="divider"></li>
+              <li><a href="/inventories/">Inventario de productos</a></li>
+            </ul>
+            <li class="divider"></li>
+            <li class="has-dropdown">
+              <a href="#">Clientes</a>
+              <ul class="dropdown">
+                <li><a href="/clients/new">Nuevo cliente</a></li>
+                <li class="divider"></li>
+                <li><a href="/clients/">Listar clientes</a></li>
+                <li class="divider"></li>
               </ul>
             </li>
             <li class="divider"></li>
-            <li><label> Información de cantidades</label></li>
-            <li><a href="/inventories/">Inventario de productos</a></li>
-          </ul>
-          <li class="divider"></li>
-          <li class="has-dropdown">
-            <a href="#">Clientes</a>
-            <ul class="dropdown">
-              <li><label>Administración de clientes</label></li>
-              <li><a href="/clients/new">Nuevo cliente</a></li>
-              <li class="divider"></li>
-              <li><a href="/clients/">Listar clientes</a></li>
-              <li class="divider"></li>
-            </ul>
-          </li>
-          <li class="divider"></li>
-          <li class="has-dropdown">
-            <a href="#">FAQ</a>
-            <ul class="dropdown">
-              <li class="divider"></li>
-              <li><a href="#">Ayuda</a></li>
-              <li class="divider"></li>
-              <li><a href="#">Preguntas Frecuentes</a></li>
-              <li class="divider"></li>
-              <li><a href="#">Acerca de </a></li>
-              <li class="divider"></li>
-
-            </ul>
-          </li>
-          <li class="divider"></li>
-          <li class="has-dropdown">
-            <a href="#">Cuenta</a>
-            <ul class="dropdown">
-              <li class="divider"></li>
-              <li class="divider"></li>
-              <li><%= link_to "Modificar datos",  edit_user_registration_path %></li>
-              <li class="divider"></li>
-              <li><label> Salir</label></li>
-              <li><%= link_to "Cerrar Sesión", destroy_user_session_path, method: :delete %></li>
-            </ul>
-          </li>
-        </li>
-
-
-        <%end%>
-        <%end%>
-
-
-        <%else%>
-        <section class="top-bar-section">
-
-          <ul class="right">
-
-
-            <section class="top-bar-section">
-
-              <ul class="right">
-                <li><a href="/articles">Noticias</a></li>
-
+            <li class="has-dropdown">
+              <a href="#">FAQ</a>
+              <ul class="dropdown">
+                <li class="divider"></li>
+                <li><a href="#">Ayuda</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Preguntas Frecuentes</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Acerca de </a></li>
                 <li class="divider"></li>
 
-                <li class="has-dropdown">
-                  <a href="#">Productos</a>
-                  <ul class="dropdown">
-                    <li><label>Productos destacados</label></li>
-                    <li class="divider"></li>
-                    <li><a href="/catalog/index">Catalogo</a></li>
-                    <li class="divider"></li>
-                    <li><label>Administración de productos</label></li>
-                    <li class="divider"></li>
-                    <li class="has-dropdown">
-                      <a href="#" class="">Bicicletas</a>
-                      <ul class="dropdown">
-                        <li><a href="/bikes/">Listar bicicletas</a></li>
-                      </ul>
-                    </li>
-                    <li class="divider"></li>
-                    <li class="has-dropdown">
-                      <a href="#" class="">Equipaciones</a>
-                      <ul class="dropdown">
-                        <li><a href="/equipment/">Listar equipaciones</a></li>
-                      </ul>
-                    </li>
-                    <li class="divider"></li>
-                    <li class="has-dropdown">
-                      <a href="#" class="">Repuestos y accesorios</a>
-                      <ul class="dropdown">
-                        <li><a href="/accesory_parts/">Listar Repuestos y accesorios</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-
-                  <li class="divider"></li>
-                  <%if User.all.empty?  %>
-                  <li><%= link_to 'Crear Gerente', new_user_registration_path%></li>
-                  <%else %>
-                  <li><%= link_to "Iniciar sesion", user_session_path %></li>
-                  <%end%>
-                </li>
-              </li>
-            </ul>
-          </section>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li class="has-dropdown">
+              <a href="#">Cuenta</a>
+              <ul class="dropdown">
+                <li><%= link_to "Modificar datos",  edit_user_registration_path %></li>
+                <li class="divider"></li>
+                <li><%= link_to "Cerrar Sesión", destroy_user_session_path, method: :delete %></li>
+              </ul>
+            </li>
+          </li>
 
 
           <%end%>
+          <%end%>
 
-        </nav>
-      </div>
 
-      <%= render 'layouts/messages' %>
+          <%else%>
+          <section class="top-bar-section">
 
-      <br>
+            <ul class="right">
 
-      <%= yield %>
 
-      <br>
+              <section class="top-bar-section">
 
-      <footer class="row">
-        <div class="large-12 columns"><hr/>
-          <div class="row">
+                <ul class="right">
+                  <li><a href="/articles">Noticias</a></li>
 
-            <div class="large-6 columns">
-              <p>Somos distribuidores autorizados de </p>
-            </div>
+                  <li class="divider"></li>
 
-            <div class="large-6 columns">
-              <ul class="inline-list right">
-                <li><a href="#">KTM</a></li>
-                <li><a href="#">Specialized</a></li>
-                <li><a href="#">Felt</a></li>
-                <li><a href="#">GW</a></li>
+                  <li class="has-dropdown">
+                    <a href="#">Productos</a>
+                    <ul class="dropdown">
+                      <li class="divider"></li>
+                      <li><a href="/catalog/index">Catalogo</a></li>
+                      <li class="divider"></li>
+                      <li><a href="/bikes">Bicicletas</a></li>
+                      <li class="divider"></li>
+                      <li><a href="/equipment">Equipaciones</a></li>
+                      <li class="divider"></li>
+                      <li><a href="/accesory_parts/">Accesorios y Repuestos</a></li>
+                    </ul>
+
+                    <li class="divider"></li>
+                    <%if User.all.empty?  %>
+                    <li><%= link_to 'Crear Gerente', new_user_registration_path%> <i class="fi-star"></i></li>
+                    <%else %>
+                    <li><%= link_to "Iniciar sesion", user_session_path %></li>
+                    <%end%>
+                  </li>
+                </li>
               </ul>
-            </div>
+            </section>
 
-          </div>
+
+            <%end%>
+
+          </nav>
         </div>
-        <div class="large-12 columns">
-          <div class="row">
 
-            <div class="large-6 columns">
-              <p>© Trabajo de Campo</p>
+        <%= render 'layouts/messages' %>
+
+        <br>
+
+        <%= yield %>
+
+        <br>
+
+        <footer class="row">
+          <div class="panel">
+            <div class="row">
+              <div class="medium-6 large-6 columns">© Copyright no one at all. Go to town.</div>
+              <div class="medium-6 large-6 columns">
+                <ul class="inline-list right">
+                  <li><a href="#">link</a></li>
+                  <li><a href="#">link</a></li>
+                  <li><a href="#">link</a></li>
+                  <li><a href="#">link</a></li>
+                </ul>
+              </div>
             </div>
-
-          </div>
-        </div>
-      </footer>
+          </footer>
 
 
-    </body>
+        </body>
 
-    </html>
+        </html>

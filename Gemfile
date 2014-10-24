@@ -49,3 +49,7 @@ gem 'pdf-writer', :git => 'git://github.com/metaskills/pdf-writer.git'
 gem 'foundation-icons-sass-rails', '~> 3.0.0'
 
 gem 'paperclip', '~> 3.1'
+
+group :development, :test do
+	gem 'foreman'
+end
