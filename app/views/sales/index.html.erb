@@ -31,7 +31,7 @@
             <td><%= sale[2] %></td>
             <td><%= sale[3] %></td>
             <td><%= sale[4] %></td>
-            <td><%= link_to 'Show', sale_path(:id =>sale[0]) %></td>
+            <td><%= link_to 'Ver',sale_path(:id =>sale[0]), class: "small button success"%>
             <td><%= link_to 'Edit', edit_sale_path(:id =>sale[0]) %></td>
             <td><%= link_to 'Destroy', sale_path(sale), method: :delete, data: { confirm: 'Are you sure?' } %></td>
           </tr>
