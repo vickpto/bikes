@@ -10,7 +10,10 @@ class SalesController < ApplicationController
   end
 
   def show
-
+    @client=Client.where(:personId =>@sale.clientId)
+    @seller=Seller.where(:personId =>@sale.sellerId)
+    query="select p.productName, i.itemAmount from products p, items i where p.productId=i.productId and i.saleId=#{@sale.saleId}"
+    @items=ActiveRecord::Base.connection.execute(query)
   end
 
   def new
