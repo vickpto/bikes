@@ -14,7 +14,7 @@ class ItemsController < ApplicationController
   def new
     @item = Item.new
     @products=Product.all
-    query="select p.productName, p.productReference, i.itemAmount from products p, items i where p.productId=i.productId and i.saleId=#{params[:saleId]}"
+    query="select p.productName, p.productReference, i.itemAmount, i.id from products p, items i where p.productId=i.productId and i.saleId=#{params[:saleId]}"
     @items=ActiveRecord::Base.connection.execute(query)
     @saleId=params[:saleId]
     
@@ -54,7 +54,7 @@ class ItemsController < ApplicationController
   def destroy
     @item.destroy
     respond_to do |format|
-      format.html { redirect_to new_item_path(:saleId => @sale.saleId) }
+      format.html { redirect_to new_item_path(:saleId => @item.saleId) }
       format.json { head :no_content }
     end
   end

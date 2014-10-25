@@ -3,7 +3,7 @@ class SalesController < ApplicationController
   respond_to :html, :xml, :json
   before_filter :authenticate_user!
   def index
-    query="select distinct(s.saleId), (select concat(username,'  ', userLastName) from sellers where personId=s.sellerId), (select concat(personName, ' ', lastName) from clients where personId=s.clientId), s.saleDate, s.note from sales s, items i where s.saleId=i.saleId"
+    query="select distinct(s.saleId), (select concat(username,'  ', userLastName) from sellers where personId=s.sellerId), (select concat(personName, ' ', lastName) from clients where personId=s.clientId), s.saleDate, s.note, s.saleStatus from sales s, items i where s.saleId=i.saleId"
     @sales=ActiveRecord::Base.connection.execute(query)
     
     
@@ -26,6 +26,8 @@ class SalesController < ApplicationController
   end
 
   def edit
+    @sellers=Seller.all
+    @clients=Client.all
   end
 
   def create
@@ -64,10 +66,10 @@ class SalesController < ApplicationController
     #@sale.destroy
     respond_to do |format|
       if @sale.saleStatus==true
-        format.html { redirect_to sale_url, notice: 'Venta deshabilitada.' }
+        format.html { redirect_to sales_path, notice: 'Venta deshabilitada.' }
         @sale.saleStatus=false
       else 
-        format.html { redirect_to sale_url, notice: 'La venta se ha habilitado.' }
+        format.html { redirect_to sales_path, notice: 'La venta se ha habilitado.' }
         @sale.saleStatus=true
         format.json { head :no_content }
       end

@@ -48,7 +48,7 @@
         <label for="right-label" class="right inline">Producto</label>
       </div>
       <div class="large-9 columns">
-        <%= f.collection_select :productId, @products, :productId, :productName, include_blank: true, :required =>true %>
+        <%= f.collection_select :productId, @products, :productId, :productName, :required =>true %>
       </div>
     </div>
 
@@ -71,7 +71,7 @@
       <div class="large-6 columns"><%= f.submit "Agregar producto", class: "radius button center"%>
       </div>
       <div class="large-6 columns">
-        <%= link_to 'Finalizar venta', sales_path , class: "radius button center" %> 
+        <%= link_to 'Finalizar venta', sale_path(:id =>@saleId), class: "radius button center" %>
       </div>
     </div>
   </div>
@@ -100,7 +100,7 @@
               <td><%= item[0]%></td>
               <td><%= item[1]%></td>
               <td><%= item[2]%></td>
-              <td><%= link_to 'Remover', item_path(@saleId), method: :delete, data: { confirm: 'Desea remover este producto?' } %>
+              <td><%= link_to 'Remover', item_path(item[3]), method: :delete, data: { confirm: 'Desea remover este producto?' } %>
               <%end%>
               <% end %>
             </tr>
