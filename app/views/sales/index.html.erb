@@ -19,7 +19,7 @@
             <th width="50">Nombre Vendedor</th>
             <th width="50">Nombre Cliente</th>
             <th width="20">Fecha</th>
-             <th width="100">Observaciones</th>
+            <th width="100">Observaciones</th>
             <th colspan="3"></th>
           </tr>
         </thead>
@@ -32,17 +32,24 @@
             <td><%= sale[3] %></td>
             <td><%= sale[4] %></td>
             <td><%= link_to 'Ver',sale_path(:id =>sale[0]), class: "small button success"%>
-            <td><%= link_to 'Edit', edit_sale_path(:id =>sale[0]) %></td>
-            <td><%= link_to 'Destroy', sale_path(sale), method: :delete, data: { confirm: 'Are you sure?' } %></td>
-          </tr>
-          <% end %>
-        </tbody>
-      </table>
-    </div>
-    <br>
+              <%= link_to 'Editar', edit_sale_path(:id =>sale[0]), class: "small button success" %>
+                <% if sale[5] == 1 %>
+                <%= link_to 'Deshabilitar', sale_path(:id=>sale[0]), method: :delete, class: "small button alert", data: { confirm: '¿Estas seguro de deshabilitar esta venta?' }%>
+                <% else %>
+                <%=link_to "Habilitar", sale_path(:id=>sale[0]), method: :delete, class: "small button success"%>
+              </td>
+              <% end %>
 
-    <div class="small-4 large-centered columns"><%= link_to "Crear Venta", new_sale_path, class: "button success radius"%>  </div>
+
+            </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+      <br>
+
+      <div class="small-4 large-centered columns"><%= link_to "Crear Venta", new_sale_path, class: "button success radius"%>  </div>
+    </div>
   </div>
-</div>
-<%end%>
+  <%end%>
 </div>
