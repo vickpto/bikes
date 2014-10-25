@@ -14,7 +14,8 @@ class ItemsController < ApplicationController
   def new
     @item = Item.new
     @products=Product.all
-    @items=Item.all
+    query="select p.productName, p.productReference, i.itemAmount from products p, items i where p.productId=i.productId and i.saleId=#{params[:saleId]}"
+    @items=ActiveRecord::Base.connection.execute(query)
     @saleId=params[:saleId]
     
     
@@ -53,7 +54,7 @@ class ItemsController < ApplicationController
   def destroy
     @item.destroy
     respond_to do |format|
-      format.html { redirect_to item_url, notice: 'El item se ha deshabilitado.' }
+      format.html { redirect_to new_item_path(:saleId => @sale.saleId) }
       format.json { head :no_content }
     end
   end
