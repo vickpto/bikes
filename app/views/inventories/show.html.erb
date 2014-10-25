@@ -1,16 +1,16 @@
 <div class="panel ">
 <div class="row">
 	<div class="large-8 columns">
-		<h2>Nuevo inventario </h2>
+		<h2>Inventario</h2>
 	</div>
 </div>
 
-
+<% @product.each do |product| %>
 <div class="row">
 	<div class="large-9 columns">
 		<div class="actions">
 			<strong>Producto:</strong>
-  			<%= @bike.productReference %> - <%= @bike.productName %> - <%= @bike.productTradeMark %>
+  			<%= product[0] %> - <%= product[1] %> - <%= product[3] %>
 		</div>
 	</div>
 </div>
@@ -19,12 +19,12 @@
 	<div class="large-9 columns">
 		<div class="actions">
 			<strong>Cantidades:</strong>
-  			<%= @inventory.productAmount %>
+  			<%= product[2]%>
 		</div>
 	</div>
 </div>
-
-
+<%= link_to 'Editar', edit_inventory_path(product[4]) %> |
+<% end %>
 
 <div class="row">
 	<div class="large-9 columns">
@@ -36,4 +36,4 @@
 
 </div>
 
-<%= link_to 'Editar', edit_inventory_path(@inventory) %> |
+

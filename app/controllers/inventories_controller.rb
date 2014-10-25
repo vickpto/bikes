@@ -2,13 +2,15 @@ class InventoriesController < ApplicationController
   before_action :set_inventory, only: [:show, :edit, :update, :destroy]
   respond_to :html, :xml, :json
   before_filter :authenticate_user!
+
   def index
-    @inventories = Product.all
-    
+    query = "select p.productName, p.productReference, i.productAmount, i.agregationDate, i.id from products p, inventories i where i.productId=p.productId"
+    @products = ActiveRecord::Base.connection.execute(query)
   end
 
   def show
-    @product=Product.find(params[:id])
+    query = "select p.productName, p.productReference, i.productAmount, i.agregationDate from products p, inventories i where i.productId=p.productId and i.id=#{params[:id]}" 
+    @product = ActiveRecord::Base.connection.execute(query)
   end
 
   def new
@@ -49,7 +51,7 @@ class InventoriesController < ApplicationController
   def destroy
     @inventory.destroy
     respond_to do |format|
-      format.html { redirect_to inventory_url, notice: 'El registro del inventario se ha deshabilitado.' }
+      format.html { redirect_to inventories_path, notice: 'El registro del inventario se ha deshabilitado.' }
       format.json { head :no_content }
     end
   end
@@ -57,7 +59,7 @@ class InventoriesController < ApplicationController
 
   private
     def set_inventory
-      @inventory = Inventory.find(params[:id])
+      @inventory=Inventory.find(params[:id])
     end
 
     def inventory_params
