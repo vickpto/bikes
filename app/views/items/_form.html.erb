@@ -87,22 +87,20 @@
         <table>
           <thead>
             <tr>
-              <th width="50">Id</th>
+              
               <th width="300">Nombre producto</th>
               <th width="300">Referencia</th>
-              <th> Cantidad</th>
-
+              <th width="30">Cantidad</th>
             </tr>
           </thead>
           <tbody>
             <tr>
              <% @items.each do |item| %>
              <tr>
-              <%if item.saleId.to_s == @saleId.to_s%>
-              <td><%= item.saleId %></td>
-              <td><%= item.productId %></td>
-              <td><%= item.itemAmount%></td>
-              <td>cantidad</td>
+              <td><%= item[0]%></td>
+              <td><%= item[1]%></td>
+              <td><%= item[2]%></td>
+              <td><%= link_to 'Remover', item_path(@saleId), method: :delete, data: { confirm: 'Desea remover este producto?' } %>
               <%end%>
               <% end %>
             </tr>
@@ -111,11 +109,12 @@
       </div>
       <br>
 
-      <% end %>
+      
 
 
     </div>
   </div>
+
 
 
 
