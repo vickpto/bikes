@@ -4,12 +4,12 @@ class InventoriesController < ApplicationController
   before_filter :authenticate_user!
 
   def index
-    query = "select p.productName, p.productReference, i.productAmount, i.agregationDate, i.id from products p, inventories i where i.productId=p.productId"
+    query = "select p.productName, p.productReference, i.productAmount, i.agregationDate, i.id, p.productStatus from products p, inventories i where i.productId=p.productId"
     @products = ActiveRecord::Base.connection.execute(query)
   end
 
   def show
-    query = "select p.productName, p.productReference, i.productAmount, i.agregationDate from products p, inventories i where i.productId=p.productId and i.id=#{params[:id]}" 
+    query = "select p.productName, p.productReference, i.productAmount, i.agregationDate, i.id from products p, inventories i where i.productId=p.productId and i.id=#{params[:id]}" 
     @product = ActiveRecord::Base.connection.execute(query)
   end
 
@@ -20,6 +20,7 @@ class InventoriesController < ApplicationController
   end
 
   def edit
+    @products=Product.all
   end
 
   def create
@@ -49,7 +50,7 @@ class InventoriesController < ApplicationController
   end
 
   def destroy
-    @inventory.destroy
+    #@inventory.destroy
     respond_to do |format|
       format.html { redirect_to inventories_path, notice: 'El registro del inventario se ha deshabilitado.' }
       format.json { head :no_content }

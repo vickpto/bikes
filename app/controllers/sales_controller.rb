@@ -20,9 +20,6 @@ class SalesController < ApplicationController
     @sale = Sale.new
     @sellers=Seller.all
     @clients=Client.all
-    
-
-    
   end
 
   def edit

@@ -5,7 +5,6 @@ class SellersController < ApplicationController
   def index
    #@sellers = User.find(:all, :conditions => { :userType => 'Seller' })
    @sellers = Seller.all
-
    respond_to do |format|
     format.html
     format.pdf do
@@ -29,7 +28,6 @@ end
 
 def create
   @seller = Seller.new(seller_params)
-  
   @seller.username=seller_params[:username].titleize
   @seller.userLastName=seller_params[:userLastName].titleize
   @seller.personId= User.all.count+1

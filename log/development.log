@@ -10187,3 +10187,3813 @@ Started GET "/assets/static_controller.js?body=1" for 127.0.0.1 at 2014-10-25 00
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-25 00:13:17 -0500
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-10-25 00:16:38 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Lohzq1HO7H4ObuSkZ51B5LmW1sSwIg77DZTWPzlSNxw="}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 276ms (ActiveRecord: 193.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-25 00:16:40 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  [1m[36m (38.0ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1654ms (Views: 1615.1ms | ActiveRecord: 38.0ms)
+
+
+Started GET "/assets/accesory_part.css?body=1" for 127.0.0.1 at 2014-10-25 00:16:42 -0500
+
+
+Started GET "/assets/accesory_parts.css?body=1" for 127.0.0.1 at 2014-10-25 00:16:42 -0500
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-10-25 00:16:42 -0500
+
+
+Started GET "/assets/bike.css?body=1" for 127.0.0.1 at 2014-10-25 00:16:42 -0500
+
+
+Started GET "/assets/catalog.css?body=1" for 127.0.0.1 at 2014-10-25 00:16:42 -0500
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-10-25 00:16:42 -0500
+
+
+Started GET "/assets/clients.css?body=1" for 127.0.0.1 at 2014-10-25 00:16:43 -0500
+
+
+Started GET "/assets/contract_histories.css?body=1" for 127.0.0.1 at 2014-10-25 00:16:43 -0500
+
+
+Started GET "/assets/equipment.css?body=1" for 127.0.0.1 at 2014-10-25 00:16:43 -0500
+
+
+Started GET "/assets/foundation-icons/foundation-icons.css?body=1" for 127.0.0.1 at 2014-10-25 00:16:43 -0500
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-10-25 00:16:43 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-10-25 00:16:43 -0500
+
+
+Started GET "/assets/inventories.css?body=1" for 127.0.0.1 at 2014-10-25 00:16:43 -0500
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2014-10-25 00:16:43 -0500
+
+
+Started GET "/assets/managers.css?body=1" for 127.0.0.1 at 2014-10-25 00:16:43 -0500
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-10-25 00:16:43 -0500
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2014-10-25 00:16:43 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-25 00:16:43 -0500
+
+
+Started GET "/assets/sellers.css?body=1" for 127.0.0.1 at 2014-10-25 00:16:43 -0500
+
+
+Started GET "/assets/static_controller.css?body=1" for 127.0.0.1 at 2014-10-25 00:16:43 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-25 00:16:43 -0500
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:43 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:44 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:44 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:44 -0500
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:44 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:44 -0500
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:44 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:44 -0500
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:44 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:44 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:44 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:44 -0500
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:44 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:44 -0500
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:44 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:44 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:45 -0500
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:45 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:45 -0500
+
+
+Started GET "/assets/accesory_part.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:45 -0500
+
+
+Started GET "/assets/accesory_parts.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:45 -0500
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:45 -0500
+
+
+Started GET "/assets/bike.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:45 -0500
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:45 -0500
+
+
+Started GET "/assets/catalog.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:45 -0500
+
+
+Started GET "/assets/clients.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:45 -0500
+
+
+Started GET "/assets/contract_histories.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:45 -0500
+
+
+Started GET "/assets/equipment.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:45 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:45 -0500
+
+
+Started GET "/assets/inventories.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:45 -0500
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:45 -0500
+
+
+Started GET "/assets/managers.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:45 -0500
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:46 -0500
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:46 -0500
+
+
+Started GET "/assets/sellers.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:46 -0500
+
+
+Started GET "/assets/static_controller.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:46 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:46 -0500
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-10-25 00:16:49 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (20.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (181.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1716ms (Views: 1646.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-10-25 00:16:54 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EkQ2FppWraLM4JpSr5SRp0dW6HnbxW8utYTAr7wyisM=", "user"=>{"email"=>"santiagot@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Ingresar"}
+  [1m[36mUser Load (17.0ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`email` = 'santiagot@gmail.com'  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (23.0ms)[0m  [1mUPDATE `users` SET `current_sign_in_at` = '2014-10-25 05:16:54', `last_sign_in_at` = '2014-10-25 02:59:16', `sign_in_count` = 8, `updated_at` = '2014-10-25 05:16:54' WHERE `users`.`id` = 2[0m
+  [1m[35m (42.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 543ms (ActiveRecord: 82.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-25 00:16:55 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1527ms (Views: 1526.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/accesory_parts.css?body=1" for 127.0.0.1 at 2014-10-25 00:16:56 -0500
+
+
+Started GET "/assets/accesory_part.css?body=1" for 127.0.0.1 at 2014-10-25 00:16:56 -0500
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-10-25 00:16:56 -0500
+
+
+Started GET "/assets/bike.css?body=1" for 127.0.0.1 at 2014-10-25 00:16:57 -0500
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-10-25 00:16:57 -0500
+
+
+Started GET "/assets/catalog.css?body=1" for 127.0.0.1 at 2014-10-25 00:16:57 -0500
+
+
+Started GET "/assets/clients.css?body=1" for 127.0.0.1 at 2014-10-25 00:16:57 -0500
+
+
+Started GET "/assets/contract_histories.css?body=1" for 127.0.0.1 at 2014-10-25 00:16:57 -0500
+
+
+Started GET "/assets/equipment.css?body=1" for 127.0.0.1 at 2014-10-25 00:16:57 -0500
+
+
+Started GET "/assets/foundation-icons/foundation-icons.css?body=1" for 127.0.0.1 at 2014-10-25 00:16:57 -0500
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-10-25 00:16:57 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-10-25 00:16:57 -0500
+
+
+Started GET "/assets/inventories.css?body=1" for 127.0.0.1 at 2014-10-25 00:16:57 -0500
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2014-10-25 00:16:57 -0500
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-10-25 00:16:57 -0500
+
+
+Started GET "/assets/managers.css?body=1" for 127.0.0.1 at 2014-10-25 00:16:57 -0500
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2014-10-25 00:16:57 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-25 00:16:58 -0500
+
+
+Started GET "/assets/sellers.css?body=1" for 127.0.0.1 at 2014-10-25 00:16:58 -0500
+
+
+Started GET "/assets/static_controller.css?body=1" for 127.0.0.1 at 2014-10-25 00:16:58 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-25 00:16:58 -0500
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:58 -0500
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:58 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:58 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:59 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:59 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:59 -0500
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:59 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:59 -0500
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:59 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:59 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-10-25 00:16:59 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-10-25 00:17:00 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-10-25 00:17:00 -0500
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2014-10-25 00:17:00 -0500
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2014-10-25 00:17:00 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2014-10-25 00:17:00 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-10-25 00:17:00 -0500
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2014-10-25 00:17:00 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-25 00:17:00 -0500
+
+
+Started GET "/assets/accesory_part.js?body=1" for 127.0.0.1 at 2014-10-25 00:17:00 -0500
+
+
+Started GET "/assets/accesory_parts.js?body=1" for 127.0.0.1 at 2014-10-25 00:17:00 -0500
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-10-25 00:17:00 -0500
+
+
+Started GET "/assets/bike.js?body=1" for 127.0.0.1 at 2014-10-25 00:17:00 -0500
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-10-25 00:17:00 -0500
+
+
+Started GET "/assets/catalog.js?body=1" for 127.0.0.1 at 2014-10-25 00:17:00 -0500
+
+
+Started GET "/assets/clients.js?body=1" for 127.0.0.1 at 2014-10-25 00:17:00 -0500
+
+
+Started GET "/assets/contract_histories.js?body=1" for 127.0.0.1 at 2014-10-25 00:17:01 -0500
+
+
+Started GET "/assets/equipment.js?body=1" for 127.0.0.1 at 2014-10-25 00:17:01 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-10-25 00:17:01 -0500
+
+
+Started GET "/assets/inventories.js?body=1" for 127.0.0.1 at 2014-10-25 00:17:01 -0500
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2014-10-25 00:17:01 -0500
+
+
+Started GET "/assets/managers.js?body=1" for 127.0.0.1 at 2014-10-25 00:17:01 -0500
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-10-25 00:17:01 -0500
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2014-10-25 00:17:01 -0500
+
+
+Started GET "/assets/sellers.js?body=1" for 127.0.0.1 at 2014-10-25 00:17:01 -0500
+
+
+Started GET "/assets/static_controller.js?body=1" for 127.0.0.1 at 2014-10-25 00:17:01 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-25 00:17:01 -0500
+
+
+Started GET "/inventories/" for 127.0.0.1 at 2014-10-25 00:17:23 -0500
+Processing by InventoriesController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (37.0ms)[0m  [1mselect p.productName, p.productReference, i.productAmount, i.agregationDate, i.id from products p, inventories i where i.productId=p.productId[0m
+  Rendered inventories/index.html.erb within layouts/application (108.0ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1621ms (Views: 1582.0ms | ActiveRecord: 37.0ms)
+
+
+Started GET "/inventories/9" for 127.0.0.1 at 2014-10-25 00:17:33 -0500
+Processing by InventoriesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mInventory Load (0.0ms)[0m  SELECT  `inventories`.* FROM `inventories`  WHERE `inventories`.`id` = 9 LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  select p.productName, p.productReference, i.productAmount, i.agregationDate from products p, inventories i where i.productId=p.productId and i.id=9
+  Rendered inventories/show.html.erb within layouts/application (20.0ms)
+Completed 500 Internal Server Error in 110ms
+
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"inventories", :id=>nil} missing required keys: [:id]):
+    23: 		</div>
+    24: 	</div>
+    25: </div>
+    26: <%= link_to 'Editar', edit_inventory_path(product[4]) %> |
+    27: <% end %>
+    28: 
+    29: <div class="row">
+  app/views/inventories/show.html.erb:26:in `block in _app_views_inventories_show_html_erb__318482387_21923412'
+  app/views/inventories/show.html.erb:8:in `each'
+  app/views/inventories/show.html.erb:8:in `_app_views_inventories_show_html_erb__318482387_21923412'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (148.0ms)
+
+
+Started GET "/inventories/9" for 127.0.0.1 at 2014-10-25 00:17:33 -0500
+Processing by InventoriesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mInventory Load (1.0ms)[0m  [1mSELECT  `inventories`.* FROM `inventories`  WHERE `inventories`.`id` = 9 LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mselect p.productName, p.productReference, i.productAmount, i.agregationDate from products p, inventories i where i.productId=p.productId and i.id=9[0m
+  Rendered inventories/show.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 35ms
+
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"inventories", :id=>nil} missing required keys: [:id]):
+    23: 		</div>
+    24: 	</div>
+    25: </div>
+    26: <%= link_to 'Editar', edit_inventory_path(product[4]) %> |
+    27: <% end %>
+    28: 
+    29: <div class="row">
+  app/views/inventories/show.html.erb:26:in `block in _app_views_inventories_show_html_erb__318482387_36028980'
+  app/views/inventories/show.html.erb:8:in `each'
+  app/views/inventories/show.html.erb:8:in `_app_views_inventories_show_html_erb__318482387_36028980'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (103.0ms)
+
+
+Started GET "/inventories/9" for 127.0.0.1 at 2014-10-25 00:18:48 -0500
+Processing by InventoriesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mInventory Load (1.0ms)[0m  SELECT  `inventories`.* FROM `inventories`  WHERE `inventories`.`id` = 9 LIMIT 1
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  select p.productName, p.productReference, i.productAmount, i.agregationDate from products p, inventories i where i.productId=p.productId and i.id=9
+  Rendered inventories/show.html.erb within layouts/application (34.0ms)
+Completed 500 Internal Server Error in 60ms
+
+ActionView::Template::Error (undefined local variable or method `inventory' for #<#<Class:0x433d1a8>:0x3547e78>):
+    23: 		</div>
+    24: 	</div>
+    25: </div>
+    26: <%= link_to 'Editar', edit_inventory_path(:id => inventory[4]) %> |
+    27: <% end %>
+    28: 
+    29: <div class="row">
+  app/views/inventories/show.html.erb:26:in `block in _app_views_inventories_show_html_erb__318482387_28484892'
+  app/views/inventories/show.html.erb:8:in `each'
+  app/views/inventories/show.html.erb:8:in `_app_views_inventories_show_html_erb__318482387_28484892'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (166.0ms)
+
+
+Started GET "/inventories/9" for 127.0.0.1 at 2014-10-25 00:19:06 -0500
+Processing by InventoriesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mInventory Load (0.0ms)[0m  [1mSELECT  `inventories`.* FROM `inventories`  WHERE `inventories`.`id` = 9 LIMIT 1[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mselect p.productName, p.productReference, i.productAmount, i.agregationDate from products p, inventories i where i.productId=p.productId and i.id=9[0m
+  Rendered inventories/show.html.erb within layouts/application (43.0ms)
+Completed 500 Internal Server Error in 68ms
+
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"inventories", :id=>nil} missing required keys: [:id]):
+    23: 		</div>
+    24: 	</div>
+    25: </div>
+    26: <%= link_to 'Editar', edit_inventory_path(:id => product[4]) %> |
+    27: <% end %>
+    28: 
+    29: <div class="row">
+  app/views/inventories/show.html.erb:26:in `block in _app_views_inventories_show_html_erb__318482387_27806820'
+  app/views/inventories/show.html.erb:8:in `each'
+  app/views/inventories/show.html.erb:8:in `_app_views_inventories_show_html_erb__318482387_27806820'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (100.0ms)
+
+
+Started GET "/inventoriesas/9" for 127.0.0.1 at 2014-10-25 00:19:29 -0500
+
+ActionController::RoutingError (No route matches [GET] "/inventoriesas/9"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (454.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (893.1ms)
+
+
+Started GET "/inventories/" for 127.0.0.1 at 2014-10-25 00:27:20 -0500
+Processing by InventoriesController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (2.0ms)[0m  [1mselect p.productName, p.productReference, i.productAmount, i.agregationDate, i.id, p.productStatus from products p, inventories i where i.productId=p.productId[0m
+  Rendered inventories/index.html.erb within layouts/application (27.0ms)
+Completed 500 Internal Server Error in 130ms
+
+ActionView::Template::Error (undefined local variable or method `sale' for #<#<Class:0x4456fc8>:0x445c860>):
+    30:               <td><%= inventory[3]%></td>
+    31:               <td><%= link_to 'Ver', inventory_path(:id => inventory[4]), class: "small button success" %></td>
+    32:               <%= link_to 'Editar', edit_inventory_path(:id =>inventory[4]), class: "small button success" %>
+    33:                 <% if sale[5] == 1 %>
+    34:                 <%= link_to 'Deshabilitar', inventory_path(:id=>inventory[4]), method: :delete, class: "small button alert", data: { confirm: '¿Estas seguro de deshabilitar esta venta?' }%>
+    35:                 <% else %>
+    36:                 <%=link_to "Habilitar", inventory_path(:id=>inventory[4]), method: :delete, class: "small button success"%>
+  app/views/inventories/index.html.erb:33:in `block in _app_views_inventories_index_html_erb__926312643_35866656'
+  app/views/inventories/index.html.erb:25:in `each'
+  app/views/inventories/index.html.erb:25:in `_app_views_inventories_index_html_erb__926312643_35866656'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (99.0ms)
+
+
+Started GET "/inventories/" for 127.0.0.1 at 2014-10-25 00:27:40 -0500
+Processing by InventoriesController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mselect p.productName, p.productReference, i.productAmount, i.agregationDate, i.id, p.productStatus from products p, inventories i where i.productId=p.productId[0m
+  Rendered inventories/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1488ms (Views: 1483.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/accesory_part.css?body=1" for 127.0.0.1 at 2014-10-25 00:27:42 -0500
+
+
+Started GET "/assets/accesory_parts.css?body=1" for 127.0.0.1 at 2014-10-25 00:27:42 -0500
+
+
+Started GET "/assets/bike.css?body=1" for 127.0.0.1 at 2014-10-25 00:27:42 -0500
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-10-25 00:27:42 -0500
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-10-25 00:27:42 -0500
+
+
+Started GET "/assets/catalog.css?body=1" for 127.0.0.1 at 2014-10-25 00:27:42 -0500
+
+
+Started GET "/assets/clients.css?body=1" for 127.0.0.1 at 2014-10-25 00:27:42 -0500
+
+
+Started GET "/assets/contract_histories.css?body=1" for 127.0.0.1 at 2014-10-25 00:27:43 -0500
+
+
+Started GET "/assets/equipment.css?body=1" for 127.0.0.1 at 2014-10-25 00:27:43 -0500
+
+
+Started GET "/assets/foundation-icons/foundation-icons.css?body=1" for 127.0.0.1 at 2014-10-25 00:27:43 -0500
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-10-25 00:27:43 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-10-25 00:27:43 -0500
+
+
+Started GET "/assets/inventories.css?body=1" for 127.0.0.1 at 2014-10-25 00:27:43 -0500
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2014-10-25 00:27:43 -0500
+
+
+Started GET "/assets/managers.css?body=1" for 127.0.0.1 at 2014-10-25 00:27:43 -0500
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-10-25 00:27:43 -0500
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2014-10-25 00:27:43 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-25 00:27:43 -0500
+
+
+Started GET "/assets/static_controller.css?body=1" for 127.0.0.1 at 2014-10-25 00:27:43 -0500
+
+
+Started GET "/assets/sellers.css?body=1" for 127.0.0.1 at 2014-10-25 00:27:43 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-25 00:27:43 -0500
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2014-10-25 00:27:44 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-25 00:27:44 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-25 00:27:44 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-10-25 00:27:44 -0500
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2014-10-25 00:27:44 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-10-25 00:27:44 -0500
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2014-10-25 00:27:44 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-10-25 00:27:44 -0500
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2014-10-25 00:27:44 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-10-25 00:27:44 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-10-25 00:27:44 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-10-25 00:27:44 -0500
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2014-10-25 00:27:44 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-10-25 00:27:44 -0500
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2014-10-25 00:27:44 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2014-10-25 00:27:44 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-10-25 00:27:44 -0500
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2014-10-25 00:27:45 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-25 00:27:45 -0500
+
+
+Started GET "/assets/accesory_part.js?body=1" for 127.0.0.1 at 2014-10-25 00:27:45 -0500
+
+
+Started GET "/assets/accesory_parts.js?body=1" for 127.0.0.1 at 2014-10-25 00:27:45 -0500
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-10-25 00:27:45 -0500
+
+
+Started GET "/assets/bike.js?body=1" for 127.0.0.1 at 2014-10-25 00:27:45 -0500
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-10-25 00:27:45 -0500
+
+
+Started GET "/assets/catalog.js?body=1" for 127.0.0.1 at 2014-10-25 00:27:45 -0500
+
+
+Started GET "/assets/clients.js?body=1" for 127.0.0.1 at 2014-10-25 00:27:45 -0500
+
+
+Started GET "/assets/contract_histories.js?body=1" for 127.0.0.1 at 2014-10-25 00:27:45 -0500
+
+
+Started GET "/assets/equipment.js?body=1" for 127.0.0.1 at 2014-10-25 00:27:45 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-10-25 00:27:45 -0500
+
+
+Started GET "/assets/inventories.js?body=1" for 127.0.0.1 at 2014-10-25 00:27:45 -0500
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2014-10-25 00:27:45 -0500
+
+
+Started GET "/assets/managers.js?body=1" for 127.0.0.1 at 2014-10-25 00:27:45 -0500
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-10-25 00:27:45 -0500
+
+
+Started GET "/assets/sellers.js?body=1" for 127.0.0.1 at 2014-10-25 00:27:46 -0500
+
+
+Started GET "/assets/static_controller.js?body=1" for 127.0.0.1 at 2014-10-25 00:27:46 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-25 00:27:46 -0500
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2014-10-25 00:27:46 -0500
+
+
+Started GET "/inventories/" for 127.0.0.1 at 2014-10-25 00:28:58 -0500
+Processing by InventoriesController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mselect p.productName, p.productReference, i.productAmount, i.agregationDate, i.id, p.productStatus from products p, inventories i where i.productId=p.productId[0m
+  Rendered inventories/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1477ms (Views: 1471.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/accesory_parts.css?body=1" for 127.0.0.1 at 2014-10-25 00:28:59 -0500
+
+
+Started GET "/assets/accesory_part.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:00 -0500
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:00 -0500
+
+
+Started GET "/assets/bike.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:00 -0500
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:00 -0500
+
+
+Started GET "/assets/catalog.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:00 -0500
+
+
+Started GET "/assets/clients.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:00 -0500
+
+
+Started GET "/assets/contract_histories.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:00 -0500
+
+
+Started GET "/assets/equipment.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:00 -0500
+
+
+Started GET "/assets/foundation-icons/foundation-icons.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:00 -0500
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:00 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:00 -0500
+
+
+Started GET "/assets/inventories.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:00 -0500
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:00 -0500
+
+
+Started GET "/assets/managers.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:01 -0500
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:01 -0500
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:01 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:01 -0500
+
+
+Started GET "/assets/sellers.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:01 -0500
+
+
+Started GET "/assets/static_controller.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:01 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:01 -0500
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:01 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:01 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:01 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:01 -0500
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:01 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:01 -0500
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:01 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:02 -0500
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:02 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:02 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:02 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:02 -0500
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:02 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:02 -0500
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:02 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:02 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:02 -0500
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:02 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:02 -0500
+
+
+Started GET "/assets/accesory_part.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:02 -0500
+
+
+Started GET "/assets/accesory_parts.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:02 -0500
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:03 -0500
+
+
+Started GET "/assets/bike.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:03 -0500
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:03 -0500
+
+
+Started GET "/assets/catalog.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:03 -0500
+
+
+Started GET "/assets/clients.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:03 -0500
+
+
+Started GET "/assets/contract_histories.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:03 -0500
+
+
+Started GET "/assets/equipment.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:03 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:03 -0500
+
+
+Started GET "/assets/inventories.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:03 -0500
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:03 -0500
+
+
+Started GET "/assets/managers.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:03 -0500
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:03 -0500
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:03 -0500
+
+
+Started GET "/assets/sellers.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:03 -0500
+
+
+Started GET "/assets/static_controller.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:03 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:03 -0500
+
+
+Started GET "/inventories/9" for 127.0.0.1 at 2014-10-25 00:29:07 -0500
+Processing by InventoriesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mInventory Load (0.0ms)[0m  SELECT  `inventories`.* FROM `inventories`  WHERE `inventories`.`id` = 9 LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  select p.productName, p.productReference, i.productAmount, i.agregationDate from products p, inventories i where i.productId=p.productId and i.id=9
+  Rendered inventories/show.html.erb within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 60ms
+
+ActionView::Template::Error (undefined local variable or method `product' for #<#<Class:0x4456fc8>:0x3506a48>):
+    24: 	</div>
+    25: </div>
+    26: <% end %>
+    27: <%= link_to 'Editar', edit_inventory_path(:id => product[4]) %>
+    28: 
+    29: <div class="row">
+    30: 	<div class="large-9 columns">
+  app/views/inventories/show.html.erb:27:in `_app_views_inventories_show_html_erb__318482387_27838260'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (10.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (111.0ms)
+
+
+Started GET "/inventories/9" for 127.0.0.1 at 2014-10-25 00:29:07 -0500
+Processing by InventoriesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mInventory Load (1.0ms)[0m  [1mSELECT  `inventories`.* FROM `inventories`  WHERE `inventories`.`id` = 9 LIMIT 1[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mselect p.productName, p.productReference, i.productAmount, i.agregationDate from products p, inventories i where i.productId=p.productId and i.id=9[0m
+  Rendered inventories/show.html.erb within layouts/application (15.0ms)
+Completed 500 Internal Server Error in 40ms
+
+ActionView::Template::Error (undefined local variable or method `product' for #<#<Class:0x4456fc8>:0x44f2ec0>):
+    24: 	</div>
+    25: </div>
+    26: <% end %>
+    27: <%= link_to 'Editar', edit_inventory_path(:id => product[4]) %>
+    28: 
+    29: <div class="row">
+    30: 	<div class="large-9 columns">
+  app/views/inventories/show.html.erb:27:in `_app_views_inventories_show_html_erb__318482387_36161808'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (105.0ms)
+
+
+Started DELETE "/inventories/9" for 127.0.0.1 at 2014-10-25 00:29:19 -0500
+Processing by InventoriesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"vm2g0hs1K8LCafULQdQyCHYck3Jst3pVx7uRqhhoEp0=", "id"=>"9"}
+  [1m[35mInventory Load (1.0ms)[0m  SELECT  `inventories`.* FROM `inventories`  WHERE `inventories`.`id` = 9 LIMIT 1
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (38.0ms)[0m  [1mDELETE FROM `inventories` WHERE `inventories`.`id` = 9[0m
+  [1m[35m (25.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/inventories
+Completed 302 Found in 73ms (ActiveRecord: 65.0ms)
+
+
+Started GET "/inventories" for 127.0.0.1 at 2014-10-25 00:29:19 -0500
+Processing by InventoriesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  select p.productName, p.productReference, i.productAmount, i.agregationDate, i.id, p.productStatus from products p, inventories i where i.productId=p.productId
+  Rendered inventories/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1474ms (Views: 1469.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/accesory_part.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:21 -0500
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:21 -0500
+
+
+Started GET "/assets/accesory_parts.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:21 -0500
+
+
+Started GET "/assets/bike.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:21 -0500
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:21 -0500
+
+
+Started GET "/assets/catalog.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:21 -0500
+
+
+Started GET "/assets/clients.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:21 -0500
+
+
+Started GET "/assets/contract_histories.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:21 -0500
+
+
+Started GET "/assets/equipment.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:22 -0500
+
+
+Started GET "/assets/foundation-icons/foundation-icons.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:22 -0500
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:22 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:22 -0500
+
+
+Started GET "/assets/inventories.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:22 -0500
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:22 -0500
+
+
+Started GET "/assets/managers.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:22 -0500
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:22 -0500
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:22 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:22 -0500
+
+
+Started GET "/assets/sellers.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:22 -0500
+
+
+Started GET "/assets/static_controller.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:22 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:22 -0500
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:22 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:22 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:23 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:23 -0500
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:23 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:23 -0500
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:23 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:23 -0500
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:23 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:23 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:23 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:23 -0500
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:23 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:23 -0500
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:23 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:23 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:23 -0500
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:23 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:24 -0500
+
+
+Started GET "/assets/accesory_part.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:24 -0500
+
+
+Started GET "/assets/accesory_parts.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:24 -0500
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:24 -0500
+
+
+Started GET "/assets/bike.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:24 -0500
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:24 -0500
+
+
+Started GET "/assets/catalog.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:24 -0500
+
+
+Started GET "/assets/clients.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:24 -0500
+
+
+Started GET "/assets/contract_histories.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:24 -0500
+
+
+Started GET "/assets/equipment.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:24 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:24 -0500
+
+
+Started GET "/assets/inventories.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:24 -0500
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:24 -0500
+
+
+Started GET "/assets/managers.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:24 -0500
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:24 -0500
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:25 -0500
+
+
+Started GET "/assets/sellers.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:25 -0500
+
+
+Started GET "/assets/static_controller.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:25 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:25 -0500
+
+
+Started GET "/inventories" for 127.0.0.1 at 2014-10-25 00:29:51 -0500
+Processing by InventoriesController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  select p.productName, p.productReference, i.productAmount, i.agregationDate, i.id, p.productStatus from products p, inventories i where i.productId=p.productId
+  Rendered inventories/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1540ms (Views: 1454.1ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/assets/accesory_part.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:53 -0500
+
+
+Started GET "/assets/accesory_parts.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:54 -0500
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:54 -0500
+
+
+Started GET "/assets/bike.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:54 -0500
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:54 -0500
+
+
+Started GET "/assets/catalog.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:54 -0500
+
+
+Started GET "/assets/clients.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:54 -0500
+
+
+Started GET "/assets/contract_histories.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:54 -0500
+
+
+Started GET "/assets/equipment.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:54 -0500
+
+
+Started GET "/assets/foundation-icons/foundation-icons.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:54 -0500
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:54 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:54 -0500
+
+
+Started GET "/assets/inventories.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:54 -0500
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:54 -0500
+
+
+Started GET "/assets/managers.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:55 -0500
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:55 -0500
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:55 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:55 -0500
+
+
+Started GET "/assets/sellers.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:55 -0500
+
+
+Started GET "/assets/static_controller.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:55 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-25 00:29:55 -0500
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:55 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:55 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:55 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:55 -0500
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:55 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:55 -0500
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:55 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:55 -0500
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:56 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:56 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:56 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:56 -0500
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:56 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:56 -0500
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:56 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:56 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:56 -0500
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:56 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:56 -0500
+
+
+Started GET "/assets/accesory_part.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:56 -0500
+
+
+Started GET "/assets/accesory_parts.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:56 -0500
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:56 -0500
+
+
+Started GET "/assets/bike.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:56 -0500
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:56 -0500
+
+
+Started GET "/assets/catalog.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:56 -0500
+
+
+Started GET "/assets/clients.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:57 -0500
+
+
+Started GET "/assets/contract_histories.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:57 -0500
+
+
+Started GET "/assets/equipment.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:57 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:57 -0500
+
+
+Started GET "/assets/inventories.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:57 -0500
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:57 -0500
+
+
+Started GET "/assets/managers.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:57 -0500
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:57 -0500
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:57 -0500
+
+
+Started GET "/assets/sellers.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:57 -0500
+
+
+Started GET "/assets/static_controller.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:57 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-25 00:29:57 -0500
+
+
+Started DELETE "/inventories/10" for 127.0.0.1 at 2014-10-25 00:30:01 -0500
+Processing by InventoriesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"vm2g0hs1K8LCafULQdQyCHYck3Jst3pVx7uRqhhoEp0=", "id"=>"10"}
+  [1m[36mInventory Load (1.0ms)[0m  [1mSELECT  `inventories`.* FROM `inventories`  WHERE `inventories`.`id` = 10 LIMIT 1[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+Redirected to http://localhost:3000/inventories
+Completed 302 Found in 27ms (ActiveRecord: 14.0ms)
+
+
+Started GET "/inventories" for 127.0.0.1 at 2014-10-25 00:30:01 -0500
+Processing by InventoriesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  select p.productName, p.productReference, i.productAmount, i.agregationDate, i.id, p.productStatus from products p, inventories i where i.productId=p.productId
+  Rendered inventories/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1479ms (Views: 1475.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/accesory_part.css?body=1" for 127.0.0.1 at 2014-10-25 00:30:02 -0500
+
+
+Started GET "/assets/accesory_parts.css?body=1" for 127.0.0.1 at 2014-10-25 00:30:03 -0500
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-10-25 00:30:03 -0500
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-10-25 00:30:03 -0500
+
+
+Started GET "/assets/catalog.css?body=1" for 127.0.0.1 at 2014-10-25 00:30:03 -0500
+
+
+Started GET "/assets/bike.css?body=1" for 127.0.0.1 at 2014-10-25 00:30:03 -0500
+
+
+Started GET "/assets/clients.css?body=1" for 127.0.0.1 at 2014-10-25 00:30:03 -0500
+
+
+Started GET "/assets/contract_histories.css?body=1" for 127.0.0.1 at 2014-10-25 00:30:03 -0500
+
+
+Started GET "/assets/equipment.css?body=1" for 127.0.0.1 at 2014-10-25 00:30:03 -0500
+
+
+Started GET "/assets/foundation-icons/foundation-icons.css?body=1" for 127.0.0.1 at 2014-10-25 00:30:03 -0500
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-10-25 00:30:03 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-10-25 00:30:03 -0500
+
+
+Started GET "/assets/inventories.css?body=1" for 127.0.0.1 at 2014-10-25 00:30:03 -0500
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2014-10-25 00:30:03 -0500
+
+
+Started GET "/assets/managers.css?body=1" for 127.0.0.1 at 2014-10-25 00:30:04 -0500
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-10-25 00:30:04 -0500
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2014-10-25 00:30:04 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-25 00:30:04 -0500
+
+
+Started GET "/assets/sellers.css?body=1" for 127.0.0.1 at 2014-10-25 00:30:04 -0500
+
+
+Started GET "/assets/static_controller.css?body=1" for 127.0.0.1 at 2014-10-25 00:30:04 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-25 00:30:04 -0500
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:04 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:04 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:04 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:04 -0500
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:04 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:04 -0500
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:04 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:04 -0500
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:04 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:05 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:05 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:05 -0500
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:05 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:05 -0500
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:05 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:05 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:05 -0500
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:05 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:05 -0500
+
+
+Started GET "/assets/accesory_part.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:05 -0500
+
+
+Started GET "/assets/accesory_parts.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:05 -0500
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:05 -0500
+
+
+Started GET "/assets/bike.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:05 -0500
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:05 -0500
+
+
+Started GET "/assets/catalog.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:05 -0500
+
+
+Started GET "/assets/clients.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:06 -0500
+
+
+Started GET "/assets/contract_histories.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:06 -0500
+
+
+Started GET "/assets/equipment.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:06 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:06 -0500
+
+
+Started GET "/assets/inventories.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:06 -0500
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:06 -0500
+
+
+Started GET "/assets/managers.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:06 -0500
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:06 -0500
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:06 -0500
+
+
+Started GET "/assets/sellers.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:06 -0500
+
+
+Started GET "/assets/static_controller.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:06 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:06 -0500
+
+
+Started DELETE "/inventories/10" for 127.0.0.1 at 2014-10-25 00:30:19 -0500
+Processing by InventoriesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"vm2g0hs1K8LCafULQdQyCHYck3Jst3pVx7uRqhhoEp0=", "id"=>"10"}
+  [1m[36mInventory Load (1.0ms)[0m  [1mSELECT  `inventories`.* FROM `inventories`  WHERE `inventories`.`id` = 10 LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+Redirected to http://localhost:3000/inventories
+Completed 302 Found in 8ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/inventories" for 127.0.0.1 at 2014-10-25 00:30:19 -0500
+Processing by InventoriesController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  select p.productName, p.productReference, i.productAmount, i.agregationDate, i.id, p.productStatus from products p, inventories i where i.productId=p.productId
+  Rendered inventories/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1403ms (Views: 1399.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/accesory_part.css?body=1" for 127.0.0.1 at 2014-10-25 00:30:21 -0500
+
+
+Started GET "/assets/accesory_parts.css?body=1" for 127.0.0.1 at 2014-10-25 00:30:21 -0500
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-10-25 00:30:21 -0500
+
+
+Started GET "/assets/bike.css?body=1" for 127.0.0.1 at 2014-10-25 00:30:21 -0500
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-10-25 00:30:21 -0500
+
+
+Started GET "/assets/catalog.css?body=1" for 127.0.0.1 at 2014-10-25 00:30:21 -0500
+
+
+Started GET "/assets/clients.css?body=1" for 127.0.0.1 at 2014-10-25 00:30:21 -0500
+
+
+Started GET "/assets/contract_histories.css?body=1" for 127.0.0.1 at 2014-10-25 00:30:22 -0500
+
+
+Started GET "/assets/equipment.css?body=1" for 127.0.0.1 at 2014-10-25 00:30:22 -0500
+
+
+Started GET "/assets/foundation-icons/foundation-icons.css?body=1" for 127.0.0.1 at 2014-10-25 00:30:22 -0500
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-10-25 00:30:22 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-10-25 00:30:22 -0500
+
+
+Started GET "/assets/inventories.css?body=1" for 127.0.0.1 at 2014-10-25 00:30:22 -0500
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2014-10-25 00:30:22 -0500
+
+
+Started GET "/assets/managers.css?body=1" for 127.0.0.1 at 2014-10-25 00:30:22 -0500
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-10-25 00:30:22 -0500
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2014-10-25 00:30:22 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-25 00:30:22 -0500
+
+
+Started GET "/assets/sellers.css?body=1" for 127.0.0.1 at 2014-10-25 00:30:22 -0500
+
+
+Started GET "/assets/static_controller.css?body=1" for 127.0.0.1 at 2014-10-25 00:30:22 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-25 00:30:22 -0500
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:22 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:22 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:23 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:23 -0500
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:23 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:23 -0500
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:23 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:23 -0500
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:23 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:23 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:23 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:23 -0500
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:23 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:23 -0500
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:23 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:23 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:23 -0500
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:23 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:24 -0500
+
+
+Started GET "/assets/accesory_part.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:24 -0500
+
+
+Started GET "/assets/accesory_parts.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:24 -0500
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:24 -0500
+
+
+Started GET "/assets/bike.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:24 -0500
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:24 -0500
+
+
+Started GET "/assets/catalog.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:24 -0500
+
+
+Started GET "/assets/clients.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:24 -0500
+
+
+Started GET "/assets/contract_histories.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:24 -0500
+
+
+Started GET "/assets/equipment.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:24 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:24 -0500
+
+
+Started GET "/assets/inventories.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:24 -0500
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:24 -0500
+
+
+Started GET "/assets/managers.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:24 -0500
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:24 -0500
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:24 -0500
+
+
+Started GET "/assets/sellers.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:25 -0500
+
+
+Started GET "/assets/static_controller.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:25 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-25 00:30:25 -0500
+
+
+Started GET "/inventories" for 127.0.0.1 at 2014-10-25 00:33:35 -0500
+Processing by InventoriesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  select p.productName, p.productReference, i.productAmount, i.agregationDate, i.id, p.productStatus from products p, inventories i where i.productId=p.productId
+  Rendered inventories/index.html.erb within layouts/application (33.0ms)
+Completed 500 Internal Server Error in 137ms
+
+SyntaxError (C:/Sites/bikes/app/views/inventories/index.html.erb:50: syntax error, unexpected keyword_ensure, expecting $end):
+  actionview (4.1.1) lib/action_view/template.rb:297:in `module_eval'
+  actionview (4.1.1) lib/action_view/template.rb:297:in `compile'
+  actionview (4.1.1) lib/action_view/template.rb:245:in `block (2 levels) in compile!'
+  activesupport (4.1.1) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.1) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.1) lib/action_view/template.rb:244:in `block in compile!'
+  <internal:prelude>:10:in `synchronize'
+  actionview (4.1.1) lib/action_view/template.rb:232:in `compile!'
+  actionview (4.1.1) lib/action_view/template.rb:144:in `block in render'
+  activesupport (4.1.1) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.1) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.1) lib/action_view/template.rb:143:in `render'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:55:in `block (2 levels) in render_template'
+  actionview (4.1.1) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionview (4.1.1) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:54:in `block in render_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:62:in `render_with_layout'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:53:in `render_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.1) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.1) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:149:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:149:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (151.0ms)
+
+
+Started GET "/inventories" for 127.0.0.1 at 2014-10-25 00:33:50 -0500
+Processing by InventoriesController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  select p.productName, p.productReference, i.productAmount, i.agregationDate, i.id, p.productStatus from products p, inventories i where i.productId=p.productId
+  Rendered inventories/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1608ms (Views: 1603.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/accesory_part.css?body=1" for 127.0.0.1 at 2014-10-25 00:33:51 -0500
+
+
+Started GET "/assets/accesory_parts.css?body=1" for 127.0.0.1 at 2014-10-25 00:33:52 -0500
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-10-25 00:33:52 -0500
+
+
+Started GET "/assets/catalog.css?body=1" for 127.0.0.1 at 2014-10-25 00:33:52 -0500
+
+
+Started GET "/assets/bike.css?body=1" for 127.0.0.1 at 2014-10-25 00:33:52 -0500
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-10-25 00:33:52 -0500
+
+
+Started GET "/assets/clients.css?body=1" for 127.0.0.1 at 2014-10-25 00:33:52 -0500
+
+
+Started GET "/assets/contract_histories.css?body=1" for 127.0.0.1 at 2014-10-25 00:33:52 -0500
+
+
+Started GET "/assets/equipment.css?body=1" for 127.0.0.1 at 2014-10-25 00:33:52 -0500
+
+
+Started GET "/assets/foundation-icons/foundation-icons.css?body=1" for 127.0.0.1 at 2014-10-25 00:33:52 -0500
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-10-25 00:33:52 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-10-25 00:33:52 -0500
+
+
+Started GET "/assets/inventories.css?body=1" for 127.0.0.1 at 2014-10-25 00:33:52 -0500
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2014-10-25 00:33:52 -0500
+
+
+Started GET "/assets/managers.css?body=1" for 127.0.0.1 at 2014-10-25 00:33:52 -0500
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-10-25 00:33:52 -0500
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2014-10-25 00:33:52 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-25 00:33:53 -0500
+
+
+Started GET "/assets/sellers.css?body=1" for 127.0.0.1 at 2014-10-25 00:33:53 -0500
+
+
+Started GET "/assets/static_controller.css?body=1" for 127.0.0.1 at 2014-10-25 00:33:53 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-25 00:33:53 -0500
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2014-10-25 00:33:53 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-25 00:33:53 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-25 00:33:53 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-10-25 00:33:53 -0500
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2014-10-25 00:33:53 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-10-25 00:33:53 -0500
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2014-10-25 00:33:53 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-10-25 00:33:53 -0500
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2014-10-25 00:33:53 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-10-25 00:33:53 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-10-25 00:33:54 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-10-25 00:33:54 -0500
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2014-10-25 00:33:54 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-10-25 00:33:54 -0500
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2014-10-25 00:33:54 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2014-10-25 00:33:54 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-10-25 00:33:54 -0500
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2014-10-25 00:33:54 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-25 00:33:54 -0500
+
+
+Started GET "/assets/accesory_part.js?body=1" for 127.0.0.1 at 2014-10-25 00:33:54 -0500
+
+
+Started GET "/assets/accesory_parts.js?body=1" for 127.0.0.1 at 2014-10-25 00:33:54 -0500
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-10-25 00:33:54 -0500
+
+
+Started GET "/assets/bike.js?body=1" for 127.0.0.1 at 2014-10-25 00:33:54 -0500
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-10-25 00:33:54 -0500
+
+
+Started GET "/assets/catalog.js?body=1" for 127.0.0.1 at 2014-10-25 00:33:54 -0500
+
+
+Started GET "/assets/clients.js?body=1" for 127.0.0.1 at 2014-10-25 00:33:54 -0500
+
+
+Started GET "/assets/contract_histories.js?body=1" for 127.0.0.1 at 2014-10-25 00:33:54 -0500
+
+
+Started GET "/assets/equipment.js?body=1" for 127.0.0.1 at 2014-10-25 00:33:55 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-10-25 00:33:55 -0500
+
+
+Started GET "/assets/inventories.js?body=1" for 127.0.0.1 at 2014-10-25 00:33:55 -0500
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2014-10-25 00:33:55 -0500
+
+
+Started GET "/assets/managers.js?body=1" for 127.0.0.1 at 2014-10-25 00:33:55 -0500
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-10-25 00:33:55 -0500
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2014-10-25 00:33:55 -0500
+
+
+Started GET "/assets/sellers.js?body=1" for 127.0.0.1 at 2014-10-25 00:33:55 -0500
+
+
+Started GET "/assets/static_controller.js?body=1" for 127.0.0.1 at 2014-10-25 00:33:55 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-25 00:33:55 -0500
+
+
+Started GET "/inventories/10/edit" for 127.0.0.1 at 2014-10-25 00:33:59 -0500
+Processing by InventoriesController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mInventory Load (0.0ms)[0m  [1mSELECT  `inventories`.* FROM `inventories`  WHERE `inventories`.`id` = 10 LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered inventories/_form.html.erb (62.4ms)
+  Rendered inventories/edit.html.erb within layouts/application (78.0ms)
+Completed 500 Internal Server Error in 125ms
+
+ActionView::Template::Error (undefined method `map' for nil:NilClass):
+    23:         <label for="right-label" class="right inline">Referencia</label>
+    24:       </div>
+    25:       <div class="small-9 columns">
+    26:         <%= f.collection_select :productId, @products, :productId, :productName, include_blank: true %>
+    27:       </div>
+    28:     </div>
+    29:   </div>
+  app/views/inventories/_form.html.erb:26:in `block in _app_views_inventories__form_html_erb__808445180_27821184'
+  app/views/inventories/_form.html.erb:1:in `_app_views_inventories__form_html_erb__808445180_27821184'
+  app/views/inventories/edit.html.erb:10:in `_app_views_inventories_edit_html_erb__1052263949_35447208'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (93.6ms)
+
+
+Started GET "/inventories/10/edit" for 127.0.0.1 at 2014-10-25 00:33:59 -0500
+Processing by InventoriesController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mInventory Load (1.0ms)[0m  [1mSELECT  `inventories`.* FROM `inventories`  WHERE `inventories`.`id` = 10 LIMIT 1[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered inventories/_form.html.erb (8.0ms)
+  Rendered inventories/edit.html.erb within layouts/application (16.0ms)
+Completed 500 Internal Server Error in 40ms
+
+ActionView::Template::Error (undefined method `map' for nil:NilClass):
+    23:         <label for="right-label" class="right inline">Referencia</label>
+    24:       </div>
+    25:       <div class="small-9 columns">
+    26:         <%= f.collection_select :productId, @products, :productId, :productName, include_blank: true %>
+    27:       </div>
+    28:     </div>
+    29:   </div>
+  app/views/inventories/_form.html.erb:26:in `block in _app_views_inventories__form_html_erb__808445180_27873960'
+  app/views/inventories/_form.html.erb:1:in `_app_views_inventories__form_html_erb__808445180_27873960'
+  app/views/inventories/edit.html.erb:10:in `_app_views_inventories_edit_html_erb__1052263949_27720360'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (98.0ms)
+
+
+Started GET "/inventories/10/edit" for 127.0.0.1 at 2014-10-25 00:34:29 -0500
+Processing by InventoriesController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mInventory Load (0.0ms)[0m  [1mSELECT  `inventories`.* FROM `inventories`  WHERE `inventories`.`id` = 10 LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+DEPRECATION WARNING: String based terminators are deprecated, please use a lambda. (called from <class:Product> at C:/Sites/bikes/app/models/product.rb:14)
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+  Rendered inventories/_form.html.erb (50.0ms)
+  Rendered inventories/edit.html.erb within layouts/application (56.0ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1718ms (Views: 1487.1ms | ActiveRecord: 39.0ms)
+
+
+Started GET "/assets/accesory_part.css?body=1" for 127.0.0.1 at 2014-10-25 00:34:31 -0500
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-10-25 00:34:31 -0500
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-10-25 00:34:31 -0500
+
+
+Started GET "/assets/accesory_parts.css?body=1" for 127.0.0.1 at 2014-10-25 00:34:31 -0500
+
+
+Started GET "/assets/catalog.css?body=1" for 127.0.0.1 at 2014-10-25 00:34:31 -0500
+
+
+Started GET "/assets/bike.css?body=1" for 127.0.0.1 at 2014-10-25 00:34:32 -0500
+
+
+Started GET "/assets/clients.css?body=1" for 127.0.0.1 at 2014-10-25 00:34:32 -0500
+
+
+Started GET "/assets/contract_histories.css?body=1" for 127.0.0.1 at 2014-10-25 00:34:32 -0500
+
+
+Started GET "/assets/equipment.css?body=1" for 127.0.0.1 at 2014-10-25 00:34:32 -0500
+
+
+Started GET "/assets/foundation-icons/foundation-icons.css?body=1" for 127.0.0.1 at 2014-10-25 00:34:32 -0500
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-10-25 00:34:32 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-10-25 00:34:32 -0500
+
+
+Started GET "/assets/inventories.css?body=1" for 127.0.0.1 at 2014-10-25 00:34:32 -0500
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2014-10-25 00:34:32 -0500
+
+
+Started GET "/assets/managers.css?body=1" for 127.0.0.1 at 2014-10-25 00:34:32 -0500
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-10-25 00:34:32 -0500
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2014-10-25 00:34:32 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-25 00:34:32 -0500
+
+
+Started GET "/assets/sellers.css?body=1" for 127.0.0.1 at 2014-10-25 00:34:32 -0500
+
+
+Started GET "/assets/static_controller.css?body=1" for 127.0.0.1 at 2014-10-25 00:34:32 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-25 00:34:33 -0500
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2014-10-25 00:34:33 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-25 00:34:33 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-25 00:34:33 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-10-25 00:34:33 -0500
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2014-10-25 00:34:33 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-10-25 00:34:33 -0500
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2014-10-25 00:34:33 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-10-25 00:34:33 -0500
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2014-10-25 00:34:33 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-10-25 00:34:33 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-10-25 00:34:33 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-10-25 00:34:33 -0500
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2014-10-25 00:34:33 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-10-25 00:34:34 -0500
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2014-10-25 00:34:34 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2014-10-25 00:34:34 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-10-25 00:34:34 -0500
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2014-10-25 00:34:34 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-25 00:34:34 -0500
+
+
+Started GET "/assets/accesory_part.js?body=1" for 127.0.0.1 at 2014-10-25 00:34:34 -0500
+
+
+Started GET "/assets/accesory_parts.js?body=1" for 127.0.0.1 at 2014-10-25 00:34:34 -0500
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-10-25 00:34:34 -0500
+
+
+Started GET "/assets/bike.js?body=1" for 127.0.0.1 at 2014-10-25 00:34:34 -0500
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-10-25 00:34:34 -0500
+
+
+Started GET "/assets/catalog.js?body=1" for 127.0.0.1 at 2014-10-25 00:34:34 -0500
+
+
+Started GET "/assets/clients.js?body=1" for 127.0.0.1 at 2014-10-25 00:34:34 -0500
+
+
+Started GET "/assets/contract_histories.js?body=1" for 127.0.0.1 at 2014-10-25 00:34:34 -0500
+
+
+Started GET "/assets/equipment.js?body=1" for 127.0.0.1 at 2014-10-25 00:34:34 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-10-25 00:34:34 -0500
+
+
+Started GET "/assets/inventories.js?body=1" for 127.0.0.1 at 2014-10-25 00:34:34 -0500
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2014-10-25 00:34:35 -0500
+
+
+Started GET "/assets/managers.js?body=1" for 127.0.0.1 at 2014-10-25 00:34:35 -0500
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-10-25 00:34:35 -0500
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2014-10-25 00:34:35 -0500
+
+
+Started GET "/assets/sellers.js?body=1" for 127.0.0.1 at 2014-10-25 00:34:35 -0500
+
+
+Started GET "/assets/static_controller.js?body=1" for 127.0.0.1 at 2014-10-25 00:34:35 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-25 00:34:35 -0500
+
+
+Started GET "/inventories/10" for 127.0.0.1 at 2014-10-25 00:34:46 -0500
+Processing by InventoriesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mInventory Load (0.0ms)[0m  SELECT  `inventories`.* FROM `inventories`  WHERE `inventories`.`id` = 10 LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  select p.productName, p.productReference, i.productAmount, i.agregationDate from products p, inventories i where i.productId=p.productId and i.id=10
+  Rendered inventories/show.html.erb within layouts/application (15.6ms)
+Completed 500 Internal Server Error in 47ms
+
+ActionView::Template::Error (undefined local variable or method `product' for #<#<Class:0x4591290>:0x4357c50>):
+    24: 	</div>
+    25: </div>
+    26: <% end %>
+    27: <%= link_to 'Editar', edit_inventory_path(:id => product[4]) %>
+    28: 
+    29: <div class="row">
+    30: 	<div class="large-9 columns">
+  app/views/inventories/show.html.erb:27:in `_app_views_inventories_show_html_erb__318482387_27838260'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (116.0ms)
+
+
+Started GET "/inventories/10" for 127.0.0.1 at 2014-10-25 00:34:47 -0500
+Processing by InventoriesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mInventory Load (1.0ms)[0m  [1mSELECT  `inventories`.* FROM `inventories`  WHERE `inventories`.`id` = 10 LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mselect p.productName, p.productReference, i.productAmount, i.agregationDate from products p, inventories i where i.productId=p.productId and i.id=10[0m
+  Rendered inventories/show.html.erb within layouts/application (16.0ms)
+Completed 500 Internal Server Error in 44ms
+
+ActionView::Template::Error (undefined local variable or method `product' for #<#<Class:0x4591290>:0x3440010>):
+    24: 	</div>
+    25: </div>
+    26: <% end %>
+    27: <%= link_to 'Editar', edit_inventory_path(:id => product[4]) %>
+    28: 
+    29: <div class="row">
+    30: 	<div class="large-9 columns">
+  app/views/inventories/show.html.erb:27:in `_app_views_inventories_show_html_erb__318482387_36161808'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (105.0ms)
+
+
+Started GET "/inventories" for 127.0.0.1 at 2014-10-25 00:34:53 -0500
+Processing by InventoriesController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mselect p.productName, p.productReference, i.productAmount, i.agregationDate, i.id, p.productStatus from products p, inventories i where i.productId=p.productId[0m
+  Rendered inventories/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1328ms (Views: 1312.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inventories/10" for 127.0.0.1 at 2014-10-25 00:35:23 -0500
+Processing by InventoriesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mInventory Load (0.0ms)[0m  SELECT  `inventories`.* FROM `inventories`  WHERE `inventories`.`id` = 10 LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  select p.productName, p.productReference, i.productAmount, i.agregationDate from products p, inventories i where i.productId=p.productId and i.id=10
+  Rendered inventories/show.html.erb within layouts/application (15.6ms)
+Completed 500 Internal Server Error in 31ms
+
+ActionView::Template::Error (undefined local variable or method `product' for #<#<Class:0x4591290>:0x3512d90>):
+    24: 	</div>
+    25: </div>
+    26: <% end %>
+    27: <%= link_to 'Editar', edit_inventory_path(:id => product[4]) %>
+    28: 
+    29: <div class="row">
+    30: 	<div class="large-9 columns">
+  app/views/inventories/show.html.erb:27:in `_app_views_inventories_show_html_erb__318482387_27838260'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (93.6ms)
+
+
+Started GET "/inventories/10" for 127.0.0.1 at 2014-10-25 00:35:23 -0500
+Processing by InventoriesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mInventory Load (0.0ms)[0m  [1mSELECT  `inventories`.* FROM `inventories`  WHERE `inventories`.`id` = 10 LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mselect p.productName, p.productReference, i.productAmount, i.agregationDate from products p, inventories i where i.productId=p.productId and i.id=10[0m
+  Rendered inventories/show.html.erb within layouts/application (13.0ms)
+Completed 500 Internal Server Error in 36ms
+
+ActionView::Template::Error (undefined local variable or method `product' for #<#<Class:0x4591290>:0x44ddb30>):
+    24: 	</div>
+    25: </div>
+    26: <% end %>
+    27: <%= link_to 'Editar', edit_inventory_path(:id => product[4]) %>
+    28: 
+    29: <div class="row">
+    30: 	<div class="large-9 columns">
+  app/views/inventories/show.html.erb:27:in `_app_views_inventories_show_html_erb__318482387_36161808'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (40.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (137.0ms)
+
+
+Started GET "/inventories/10" for 127.0.0.1 at 2014-10-25 00:36:28 -0500
+Processing by InventoriesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mInventory Load (0.0ms)[0m  SELECT  `inventories`.* FROM `inventories`  WHERE `inventories`.`id` = 10 LIMIT 1
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  select p.productName, p.productReference, i.productAmount, i.agregationDate from products p, inventories i where i.productId=p.productId and i.id=10
+  Rendered inventories/show.html.erb within layouts/application (14.0ms)
+Completed 500 Internal Server Error in 38ms
+
+ActionView::Template::Error (undefined local variable or method `inventory' for #<#<Class:0x4591290>:0x352db08>):
+    24: 	</div>
+    25: </div>
+    26: <% end %>
+    27: <%= link_to 'Editar', edit_inventory_path(:id =>inventory[4]), class: "small button success" %>
+    28: 
+    29: <div class="row">
+    30: 	<div class="large-9 columns">
+  app/views/inventories/show.html.erb:27:in `_app_views_inventories_show_html_erb__318482387_27899724'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (99.0ms)
+
+
+Started GET "/inventories/10" for 127.0.0.1 at 2014-10-25 00:36:43 -0500
+Processing by InventoriesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mInventory Load (0.0ms)[0m  [1mSELECT  `inventories`.* FROM `inventories`  WHERE `inventories`.`id` = 10 LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (2.0ms)[0m  [1mselect p.productName, p.productReference, i.productAmount, i.agregationDate from products p, inventories i where i.productId=p.productId and i.id=10[0m
+  Rendered inventories/show.html.erb within layouts/application (19.0ms)
+Completed 500 Internal Server Error in 48ms
+
+ActionView::Template::Error (undefined local variable or method `inventory' for #<#<Class:0x4591290>:0x4337028>):
+    23: 		</div>
+    24: 	</div>
+    25: </div>
+    26: <%= link_to 'Editar', edit_inventory_path(:id =>inventory[4]), class: "small button success" %>
+    27: <% end %>
+    28: 
+    29: 
+  app/views/inventories/show.html.erb:26:in `block in _app_views_inventories_show_html_erb__318482387_35243940'
+  app/views/inventories/show.html.erb:8:in `each'
+  app/views/inventories/show.html.erb:8:in `_app_views_inventories_show_html_erb__318482387_35243940'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (99.0ms)
+
+
+Started GET "/inventories/10" for 127.0.0.1 at 2014-10-25 00:37:01 -0500
+Processing by InventoriesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mInventory Load (1.0ms)[0m  SELECT  `inventories`.* FROM `inventories`  WHERE `inventories`.`id` = 10 LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  select p.productName, p.productReference, i.productAmount, i.agregationDate from products p, inventories i where i.productId=p.productId and i.id=10
+  Rendered inventories/show.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 31ms
+
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"inventories", :id=>nil} missing required keys: [:id]):
+    23: 		</div>
+    24: 	</div>
+    25: </div>
+    26: <%= link_to 'Editar', edit_inventory_path(:id =>product[4]), class: "small button success" %>
+    27: <% end %>
+    28: 
+    29: 
+  app/views/inventories/show.html.erb:26:in `block in _app_views_inventories_show_html_erb__318482387_27904800'
+  app/views/inventories/show.html.erb:8:in `each'
+  app/views/inventories/show.html.erb:8:in `_app_views_inventories_show_html_erb__318482387_27904800'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (100.0ms)
+
+
+Started GET "/inventories/10" for 127.0.0.1 at 2014-10-25 00:39:57 -0500
+Processing by InventoriesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mInventory Load (0.0ms)[0m  [1mSELECT  `inventories`.* FROM `inventories`  WHERE `inventories`.`id` = 10 LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mselect p.productName, p.productReference, i.productAmount, i.agregationDate, i.id from products p, inventories i where i.productId=p.productId and i.id=10[0m
+  Rendered inventories/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1545ms (Views: 1482.1ms | ActiveRecord: 18.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-10-25 00:39:59 -0500
+
+
+Started GET "/assets/accesory_part.css?body=1" for 127.0.0.1 at 2014-10-25 00:39:59 -0500
+
+
+Started GET "/assets/accesory_parts.css?body=1" for 127.0.0.1 at 2014-10-25 00:39:59 -0500
+
+
+Started GET "/assets/bike.css?body=1" for 127.0.0.1 at 2014-10-25 00:39:59 -0500
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-10-25 00:39:59 -0500
+
+
+Started GET "/assets/catalog.css?body=1" for 127.0.0.1 at 2014-10-25 00:40:00 -0500
+
+
+Started GET "/assets/clients.css?body=1" for 127.0.0.1 at 2014-10-25 00:40:00 -0500
+
+
+Started GET "/assets/contract_histories.css?body=1" for 127.0.0.1 at 2014-10-25 00:40:00 -0500
+
+
+Started GET "/assets/equipment.css?body=1" for 127.0.0.1 at 2014-10-25 00:40:00 -0500
+
+
+Started GET "/assets/foundation-icons/foundation-icons.css?body=1" for 127.0.0.1 at 2014-10-25 00:40:00 -0500
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-10-25 00:40:00 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-10-25 00:40:00 -0500
+
+
+Started GET "/assets/inventories.css?body=1" for 127.0.0.1 at 2014-10-25 00:40:00 -0500
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2014-10-25 00:40:00 -0500
+
+
+Started GET "/assets/managers.css?body=1" for 127.0.0.1 at 2014-10-25 00:40:00 -0500
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-10-25 00:40:00 -0500
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2014-10-25 00:40:00 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-25 00:40:00 -0500
+
+
+Started GET "/assets/sellers.css?body=1" for 127.0.0.1 at 2014-10-25 00:40:00 -0500
+
+
+Started GET "/assets/static_controller.css?body=1" for 127.0.0.1 at 2014-10-25 00:40:00 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-25 00:40:00 -0500
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2014-10-25 00:40:01 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-25 00:40:01 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-25 00:40:01 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-10-25 00:40:01 -0500
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2014-10-25 00:40:01 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-10-25 00:40:01 -0500
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2014-10-25 00:40:01 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-10-25 00:40:01 -0500
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2014-10-25 00:40:01 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-10-25 00:40:01 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-10-25 00:40:01 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-10-25 00:40:01 -0500
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2014-10-25 00:40:01 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-10-25 00:40:01 -0500
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2014-10-25 00:40:01 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2014-10-25 00:40:02 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-10-25 00:40:02 -0500
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2014-10-25 00:40:02 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-25 00:40:02 -0500
+
+
+Started GET "/assets/accesory_part.js?body=1" for 127.0.0.1 at 2014-10-25 00:40:02 -0500
+
+
+Started GET "/assets/accesory_parts.js?body=1" for 127.0.0.1 at 2014-10-25 00:40:02 -0500
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-10-25 00:40:02 -0500
+
+
+Started GET "/assets/bike.js?body=1" for 127.0.0.1 at 2014-10-25 00:40:02 -0500
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-10-25 00:40:02 -0500
+
+
+Started GET "/assets/catalog.js?body=1" for 127.0.0.1 at 2014-10-25 00:40:02 -0500
+
+
+Started GET "/assets/clients.js?body=1" for 127.0.0.1 at 2014-10-25 00:40:02 -0500
+
+
+Started GET "/assets/contract_histories.js?body=1" for 127.0.0.1 at 2014-10-25 00:40:02 -0500
+
+
+Started GET "/assets/equipment.js?body=1" for 127.0.0.1 at 2014-10-25 00:40:02 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-10-25 00:40:02 -0500
+
+
+Started GET "/assets/inventories.js?body=1" for 127.0.0.1 at 2014-10-25 00:40:02 -0500
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2014-10-25 00:40:03 -0500
+
+
+Started GET "/assets/managers.js?body=1" for 127.0.0.1 at 2014-10-25 00:40:03 -0500
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-10-25 00:40:03 -0500
+
+
+Started GET "/assets/sellers.js?body=1" for 127.0.0.1 at 2014-10-25 00:40:03 -0500
+
+
+Started GET "/assets/static_controller.js?body=1" for 127.0.0.1 at 2014-10-25 00:40:03 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-25 00:40:03 -0500
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2014-10-25 00:40:03 -0500
+
+
+Started GET "/inventories/10/edit" for 127.0.0.1 at 2014-10-25 00:40:09 -0500
+Processing by InventoriesController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mInventory Load (0.0ms)[0m  SELECT  `inventories`.* FROM `inventories`  WHERE `inventories`.`id` = 10 LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+DEPRECATION WARNING: String based terminators are deprecated, please use a lambda. (called from <class:Product> at C:/Sites/bikes/app/models/product.rb:14)
+  [1m[35mProduct Load (0.0ms)[0m  SELECT `products`.* FROM `products`
+  Rendered inventories/_form.html.erb (46.8ms)
+  Rendered inventories/edit.html.erb within layouts/application (46.8ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1404ms (Views: 1372.8ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/accesory_parts" for 127.0.0.1 at 2014-10-25 14:14:33 -0500
+Processing by AccesoryPartsController#index as HTML
+DEPRECATION WARNING: String based terminators are deprecated, please use a lambda. (called from <class:Product> at C:/Sites/bikes/app/models/product.rb:14)
+  [1m[36mProduct Load (39.0ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+  Rendered accesory_parts/index.html.erb within layouts/application (138.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 2116ms (Views: 1959.1ms | ActiveRecord: 56.0ms)
+
+
+Started GET "/assets/accesory_part.css?body=1" for 127.0.0.1 at 2014-10-25 14:14:36 -0500
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-10-25 14:14:36 -0500
+
+
+Started GET "/assets/accesory_parts.css?body=1" for 127.0.0.1 at 2014-10-25 14:14:36 -0500
+
+
+Started GET "/assets/bike.css?body=1" for 127.0.0.1 at 2014-10-25 14:14:36 -0500
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-10-25 14:14:36 -0500
+
+
+Started GET "/assets/catalog.css?body=1" for 127.0.0.1 at 2014-10-25 14:14:37 -0500
+
+
+Started GET "/assets/clients.css?body=1" for 127.0.0.1 at 2014-10-25 14:14:37 -0500
+
+
+Started GET "/assets/contract_histories.css?body=1" for 127.0.0.1 at 2014-10-25 14:14:37 -0500
+
+
+Started GET "/assets/equipment.css?body=1" for 127.0.0.1 at 2014-10-25 14:14:37 -0500
+
+
+Started GET "/assets/foundation-icons/foundation-icons.css?body=1" for 127.0.0.1 at 2014-10-25 14:14:37 -0500
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-10-25 14:14:37 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-10-25 14:14:37 -0500
+
+
+Started GET "/assets/inventories.css?body=1" for 127.0.0.1 at 2014-10-25 14:14:37 -0500
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2014-10-25 14:14:37 -0500
+
+
+Started GET "/assets/managers.css?body=1" for 127.0.0.1 at 2014-10-25 14:14:37 -0500
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-10-25 14:14:37 -0500
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2014-10-25 14:14:37 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-25 14:14:37 -0500
+
+
+Started GET "/assets/sellers.css?body=1" for 127.0.0.1 at 2014-10-25 14:14:37 -0500
+
+
+Started GET "/assets/static_controller.css?body=1" for 127.0.0.1 at 2014-10-25 14:14:37 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-25 14:14:37 -0500
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2014-10-25 14:14:38 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-25 14:14:38 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-25 14:14:38 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-10-25 14:14:38 -0500
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2014-10-25 14:14:38 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-10-25 14:14:38 -0500
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2014-10-25 14:14:38 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-10-25 14:14:38 -0500
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2014-10-25 14:14:38 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-10-25 14:14:38 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-10-25 14:14:38 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-10-25 14:14:38 -0500
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2014-10-25 14:14:38 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-10-25 14:14:38 -0500
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2014-10-25 14:14:38 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2014-10-25 14:14:39 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-10-25 14:14:39 -0500
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2014-10-25 14:14:39 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-25 14:14:39 -0500
+
+
+Started GET "/assets/accesory_part.js?body=1" for 127.0.0.1 at 2014-10-25 14:14:39 -0500
+
+
+Started GET "/assets/accesory_parts.js?body=1" for 127.0.0.1 at 2014-10-25 14:14:39 -0500
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-10-25 14:14:39 -0500
+
+
+Started GET "/assets/bike.js?body=1" for 127.0.0.1 at 2014-10-25 14:14:39 -0500
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-10-25 14:14:39 -0500
+
+
+Started GET "/assets/catalog.js?body=1" for 127.0.0.1 at 2014-10-25 14:14:39 -0500
+
+
+Started GET "/assets/clients.js?body=1" for 127.0.0.1 at 2014-10-25 14:14:39 -0500
+
+
+Started GET "/assets/contract_histories.js?body=1" for 127.0.0.1 at 2014-10-25 14:14:39 -0500
+
+
+Started GET "/assets/equipment.js?body=1" for 127.0.0.1 at 2014-10-25 14:14:39 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-10-25 14:14:39 -0500
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2014-10-25 14:14:40 -0500
+
+
+Started GET "/assets/inventories.js?body=1" for 127.0.0.1 at 2014-10-25 14:14:40 -0500
+
+
+Started GET "/assets/managers.js?body=1" for 127.0.0.1 at 2014-10-25 14:14:40 -0500
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-10-25 14:14:40 -0500
+
+
+Started GET "/assets/sellers.js?body=1" for 127.0.0.1 at 2014-10-25 14:14:40 -0500
+
+
+Started GET "/assets/static_controller.js?body=1" for 127.0.0.1 at 2014-10-25 14:14:40 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-25 14:14:40 -0500
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2014-10-25 14:14:41 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-25 14:14:44 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1654ms (Views: 1653.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/services" for 127.0.0.1 at 2014-10-25 14:15:33 -0500
+Processing by StaticControllerController#show as HTML
+  Parameters: {"page"=>"services"}
+  Rendered static_controller/services.html within layouts/application (0.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1466ms (Views: 1388.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-10-25 14:15:50 -0500
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (15.6ms)[0m  [1mSELECT `articles`.* FROM `articles`[0m
+  Rendered articles/index.html.erb within layouts/application (15.6ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1342ms (Views: 1310.4ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/accesory_parts/" for 127.0.0.1 at 2014-10-25 14:15:57 -0500
+Processing by AccesoryPartsController#index as HTML
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+  Rendered accesory_parts/index.html.erb within layouts/application (0.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1315ms (Views: 1314.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accesory_parts/" for 127.0.0.1 at 2014-10-25 14:15:58 -0500
+Processing by AccesoryPartsController#index as HTML
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+  Rendered accesory_parts/index.html.erb within layouts/application (0.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1376ms (Views: 1376.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accesory_parts/" for 127.0.0.1 at 2014-10-25 14:16:00 -0500
+Processing by AccesoryPartsController#index as HTML
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+  Rendered accesory_parts/index.html.erb within layouts/application (15.6ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1390ms (Views: 1390.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accesory_parts/" for 127.0.0.1 at 2014-10-25 14:16:01 -0500
+Processing by AccesoryPartsController#index as HTML
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+  Rendered accesory_parts/index.html.erb within layouts/application (0.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1338ms (Views: 1338.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accesory_parts/" for 127.0.0.1 at 2014-10-25 14:16:03 -0500
+Processing by AccesoryPartsController#index as HTML
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+  Rendered accesory_parts/index.html.erb within layouts/application (0.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1377ms (Views: 1377.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accesory_parts/" for 127.0.0.1 at 2014-10-25 14:16:04 -0500
+Processing by AccesoryPartsController#index as HTML
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+  Rendered accesory_parts/index.html.erb within layouts/application (0.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1371ms (Views: 1371.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accesory_parts/" for 127.0.0.1 at 2014-10-25 14:16:06 -0500
+Processing by AccesoryPartsController#index as HTML
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+  Rendered accesory_parts/index.html.erb within layouts/application (0.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1346ms (Views: 1330.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/equipment" for 127.0.0.1 at 2014-10-25 14:16:07 -0500
+Processing by EquipmentController#index as HTML
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+  Rendered equipment/index.html.erb within layouts/application (17.6ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1430ms (Views: 1428.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bikes" for 127.0.0.1 at 2014-10-25 14:16:09 -0500
+Processing by BikesController#index as HTML
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+  Rendered bikes/index.html.erb within layouts/application (0.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1400ms (Views: 1400.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bikes" for 127.0.0.1 at 2014-10-25 14:16:10 -0500
+Processing by BikesController#index as HTML
+  [1m[36mProduct Load (15.6ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+  Rendered bikes/index.html.erb within layouts/application (15.6ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1384ms (Views: 1368.0ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/catalog/index" for 127.0.0.1 at 2014-10-25 14:16:11 -0500
+Processing by CatalogController#index as HTML
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM `products`  WHERE `products`.`typeProduct` = 'BIKE' AND `products`.`productStatus` = 1[0m
+  [1m[35mProduct Load (0.0ms)[0m  SELECT `products`.* FROM `products`  WHERE `products`.`typeProduct` = 'BIKE' AND `products`.`productStatus` = 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM `products`  WHERE `products`.`typeProduct` = 'EQUIPMENT' AND `products`.`productStatus` = 1[0m
+  [1m[35mProduct Load (15.6ms)[0m  SELECT `products`.* FROM `products`  WHERE `products`.`typeProduct` = 'EQUIPMENT' AND `products`.`productStatus` = 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM `products`  WHERE `products`.`typeProduct` = 'ACCESORY' AND `products`.`productStatus` = 1[0m
+  [1m[35mProduct Load (0.0ms)[0m  SELECT `products`.* FROM `products`  WHERE `products`.`typeProduct` = 'ACCESORY' AND `products`.`productStatus` = 1
+  Rendered catalog/index.html.erb within layouts/application (46.8ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1451ms (Views: 1435.2ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/catalog/index" for 127.0.0.1 at 2014-10-25 14:16:13 -0500
+Processing by CatalogController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `products`  WHERE `products`.`typeProduct` = 'BIKE' AND `products`.`productStatus` = 1
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT `products`.* FROM `products`  WHERE `products`.`typeProduct` = 'BIKE' AND `products`.`productStatus` = 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `products`  WHERE `products`.`typeProduct` = 'EQUIPMENT' AND `products`.`productStatus` = 1
+  [1m[36mProduct Load (1.0ms)[0m  [1mSELECT `products`.* FROM `products`  WHERE `products`.`typeProduct` = 'EQUIPMENT' AND `products`.`productStatus` = 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `products`  WHERE `products`.`typeProduct` = 'ACCESORY' AND `products`.`productStatus` = 1
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT `products`.* FROM `products`  WHERE `products`.`typeProduct` = 'ACCESORY' AND `products`.`productStatus` = 1[0m
+  Rendered catalog/index.html.erb within layouts/application (20.6ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1396ms (Views: 1394.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-10-25 14:16:14 -0500
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT `articles`.* FROM `articles`[0m
+  Rendered articles/index.html.erb within layouts/application (15.6ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1361ms (Views: 1361.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-10-25 14:16:16 -0500
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT `articles`.* FROM `articles`[0m
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1288ms (Views: 1288.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-10-25 14:16:17 -0500
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT `articles`.* FROM `articles`[0m
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1357ms (Views: 1357.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-10-25 14:16:19 -0500
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT `articles`.* FROM `articles`[0m
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1342ms (Views: 1341.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-10-25 14:16:20 -0500
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT `articles`.* FROM `articles`[0m
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1342ms (Views: 1341.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-10-25 14:16:21 -0500
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT `articles`.* FROM `articles`[0m
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1310ms (Views: 1294.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-10-25 14:16:23 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (15.6ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  Rendered layouts/_messages.html.erb (15.6ms)
+Completed 200 OK in 1498ms (Views: 1450.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-10-25 14:16:25 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (15.6ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1357ms (Views: 1357.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-10-25 14:16:26 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (15.6ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1357ms (Views: 1357.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-10-25 14:16:27 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (15.6ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1279ms (Views: 1279.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-10-25 14:16:54 -0500
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT `articles`.* FROM `articles`[0m
+  Rendered articles/index.html.erb within layouts/application (2.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1368ms (Views: 1365.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-10-25 14:16:56 -0500
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT `articles`.* FROM `articles`[0m
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1356ms (Views: 1356.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-10-25 14:16:59 -0500
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT `articles`.* FROM `articles`[0m
+  Rendered articles/index.html.erb within layouts/application (15.6ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1331ms (Views: 1331.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/catalog/index" for 127.0.0.1 at 2014-10-25 14:17:02 -0500
+Processing by CatalogController#index as HTML
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM `products`  WHERE `products`.`typeProduct` = 'BIKE' AND `products`.`productStatus` = 1[0m
+  [1m[35mProduct Load (0.0ms)[0m  SELECT `products`.* FROM `products`  WHERE `products`.`typeProduct` = 'BIKE' AND `products`.`productStatus` = 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM `products`  WHERE `products`.`typeProduct` = 'EQUIPMENT' AND `products`.`productStatus` = 1[0m
+  [1m[35mProduct Load (0.0ms)[0m  SELECT `products`.* FROM `products`  WHERE `products`.`typeProduct` = 'EQUIPMENT' AND `products`.`productStatus` = 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM `products`  WHERE `products`.`typeProduct` = 'ACCESORY' AND `products`.`productStatus` = 1[0m
+  [1m[35mProduct Load (0.0ms)[0m  SELECT `products`.* FROM `products`  WHERE `products`.`typeProduct` = 'ACCESORY' AND `products`.`productStatus` = 1
+  Rendered catalog/index.html.erb within layouts/application (15.6ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1342ms (Views: 1341.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bikes/3" for 127.0.0.1 at 2014-10-25 14:17:26 -0500
+Processing by BikesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mProduct Load (31.2ms)[0m  SELECT  `products`.* FROM `products`  WHERE `products`.`id` = 3 LIMIT 1
+  Rendered bikes/show.html.erb within layouts/application (0.0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1638ms (Views: 1606.8ms | ActiveRecord: 31.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-25 14:17:32 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1617ms (Views: 1601.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-25 14:17:34 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1395ms (Views: 1395.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-25 14:17:35 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1357ms (Views: 1357.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-25 14:17:37 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1451ms (Views: 1450.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-25 14:17:38 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1466ms (Views: 1450.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-25 14:17:40 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1516ms (Views: 1515.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-10-25 14:18:24 -0500
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.0ms)[0m  SELECT `articles`.* FROM `articles`
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1357ms (Views: 1357.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/catalog/index" for 127.0.0.1 at 2014-10-25 14:18:29 -0500
+Processing by CatalogController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `products`  WHERE `products`.`typeProduct` = 'BIKE' AND `products`.`productStatus` = 1
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT `products`.* FROM `products`  WHERE `products`.`typeProduct` = 'BIKE' AND `products`.`productStatus` = 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `products`  WHERE `products`.`typeProduct` = 'EQUIPMENT' AND `products`.`productStatus` = 1
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT `products`.* FROM `products`  WHERE `products`.`typeProduct` = 'EQUIPMENT' AND `products`.`productStatus` = 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `products`  WHERE `products`.`typeProduct` = 'ACCESORY' AND `products`.`productStatus` = 1
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT `products`.* FROM `products`  WHERE `products`.`typeProduct` = 'ACCESORY' AND `products`.`productStatus` = 1[0m
+  Rendered catalog/index.html.erb within layouts/application (15.6ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1342ms (Views: 1341.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-10-25 14:18:41 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (15.6ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1397ms (Views: 1381.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-10-25 14:23:47 -0500
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.0ms)[0m  SELECT `articles`.* FROM `articles`
+  Rendered articles/index.html.erb within layouts/application (0.0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1404ms (Views: 1404.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-10-25 14:26:56 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (15.6ms)
+  [1m[35m (15.6ms)[0m  SELECT COUNT(*) FROM `users`
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1365ms (Views: 1349.6ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-10-25 14:26:58 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1390ms (Views: 1389.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-25 14:26:59 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1351ms (Views: 1350.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-25 14:27:01 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1330ms (Views: 1330.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-25 14:27:02 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  [1m[35m (15.6ms)[0m  SELECT COUNT(*) FROM `users`
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1340ms (Views: 1324.4ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-25 14:27:03 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1354ms (Views: 1354.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-25 14:27:05 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1352ms (Views: 1351.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-25 14:27:06 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1379ms (Views: 1379.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-25 14:27:08 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1414ms (Views: 1414.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-25 14:27:09 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1378ms (Views: 1378.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-25 14:27:10 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1401ms (Views: 1401.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-25 14:27:12 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 1398ms (Views: 1397.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-25 14:27:13 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM `users`
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1372ms (Views: 1371.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-10-25 14:27:15 -0500
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT `articles`.* FROM `articles`[0m
+  Rendered articles/index.html.erb within layouts/application (2.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1343ms (Views: 1341.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/accesory_part.css?body=1" for 127.0.0.1 at 2014-10-25 14:27:16 -0500
+
+
+Started GET "/assets/accesory_parts.css?body=1" for 127.0.0.1 at 2014-10-25 14:27:16 -0500
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-10-25 14:27:16 -0500
+
+
+Started GET "/assets/bike.css?body=1" for 127.0.0.1 at 2014-10-25 14:27:17 -0500
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-10-25 14:27:17 -0500
+
+
+Started GET "/assets/catalog.css?body=1" for 127.0.0.1 at 2014-10-25 14:27:17 -0500
+
+
+Started GET "/assets/clients.css?body=1" for 127.0.0.1 at 2014-10-25 14:27:17 -0500
+
+
+Started GET "/assets/contract_histories.css?body=1" for 127.0.0.1 at 2014-10-25 14:27:17 -0500
+
+
+Started GET "/assets/equipment.css?body=1" for 127.0.0.1 at 2014-10-25 14:27:17 -0500
+
+
+Started GET "/assets/foundation-icons/foundation-icons.css?body=1" for 127.0.0.1 at 2014-10-25 14:27:17 -0500
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-10-25 14:27:17 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-10-25 14:27:17 -0500
+
+
+Started GET "/assets/inventories.css?body=1" for 127.0.0.1 at 2014-10-25 14:27:17 -0500
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2014-10-25 14:27:17 -0500
+
+
+Started GET "/assets/managers.css?body=1" for 127.0.0.1 at 2014-10-25 14:27:17 -0500
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-10-25 14:27:17 -0500
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2014-10-25 14:27:17 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-25 14:27:17 -0500
+
+
+Started GET "/assets/sellers.css?body=1" for 127.0.0.1 at 2014-10-25 14:27:18 -0500
+
+
+Started GET "/assets/static_controller.css?body=1" for 127.0.0.1 at 2014-10-25 14:27:18 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-25 14:27:18 -0500
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2014-10-25 14:27:18 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-25 14:27:18 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-25 14:27:18 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-10-25 14:27:18 -0500
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2014-10-25 14:27:18 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-10-25 14:27:18 -0500
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2014-10-25 14:27:18 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-10-25 14:27:18 -0500
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2014-10-25 14:27:18 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-10-25 14:27:18 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-10-25 14:27:18 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-10-25 14:27:18 -0500
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2014-10-25 14:27:19 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-10-25 14:27:19 -0500
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2014-10-25 14:27:19 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2014-10-25 14:27:19 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-10-25 14:27:19 -0500
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2014-10-25 14:27:19 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-25 14:27:19 -0500
+
+
+Started GET "/assets/accesory_part.js?body=1" for 127.0.0.1 at 2014-10-25 14:27:19 -0500
+
+
+Started GET "/assets/accesory_parts.js?body=1" for 127.0.0.1 at 2014-10-25 14:27:19 -0500
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-10-25 14:27:19 -0500
+
+
+Started GET "/assets/bike.js?body=1" for 127.0.0.1 at 2014-10-25 14:27:19 -0500
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-10-25 14:27:19 -0500
+
+
+Started GET "/assets/catalog.js?body=1" for 127.0.0.1 at 2014-10-25 14:27:19 -0500
+
+
+Started GET "/assets/clients.js?body=1" for 127.0.0.1 at 2014-10-25 14:27:19 -0500
+
+
+Started GET "/assets/contract_histories.js?body=1" for 127.0.0.1 at 2014-10-25 14:27:20 -0500
+
+
+Started GET "/assets/equipment.js?body=1" for 127.0.0.1 at 2014-10-25 14:27:20 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-10-25 14:27:20 -0500
+
+
+Started GET "/assets/inventories.js?body=1" for 127.0.0.1 at 2014-10-25 14:27:20 -0500
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2014-10-25 14:27:20 -0500
+
+
+Started GET "/assets/managers.js?body=1" for 127.0.0.1 at 2014-10-25 14:27:20 -0500
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-10-25 14:27:20 -0500
+
+
+Started GET "/assets/sellers.js?body=1" for 127.0.0.1 at 2014-10-25 14:27:20 -0500
+
+
+Started GET "/assets/static_controller.js?body=1" for 127.0.0.1 at 2014-10-25 14:27:20 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-25 14:27:20 -0500
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2014-10-25 14:27:20 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-25 14:27:27 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1373ms (Views: 1372.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-10-25 14:31:15 -0500
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.0ms)[0m  SELECT `articles`.* FROM `articles`
+  Rendered articles/index.html.erb within layouts/application (2.0ms)
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1818ms (Views: 1816.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-25 14:31:20 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `users`
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 1552ms (Views: 1551.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-10-25 14:31:23 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (13.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (39.0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1635ms (Views: 1632.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-10-25 14:31:24 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.0ms)
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM `users`
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1494ms (Views: 1491.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-10-25 14:31:26 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1476ms (Views: 1474.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-10-25 14:31:35 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z3vNeOYjoR7AyGJwq1vrfZznww4V8EhwfyqCidWA0ms=", "user"=>{"email"=>"hugocontreras@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Ingresar"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`email` = 'hugocontreras@gmail.com'  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (45.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (42.0ms)[0m  UPDATE `users` SET `current_sign_in_at` = '2014-10-25 19:31:35', `last_sign_in_at` = '2014-10-25 04:50:16', `sign_in_count` = 11, `updated_at` = '2014-10-25 19:31:35' WHERE `users`.`id` = 1
+  [1m[36m (28.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 452ms (ActiveRecord: 116.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-25 14:31:35 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (1.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1547ms (Views: 1545.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/accesory_part.css?body=1" for 127.0.0.1 at 2014-10-25 14:31:37 -0500
+
+
+Started GET "/assets/accesory_parts.css?body=1" for 127.0.0.1 at 2014-10-25 14:31:37 -0500
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-10-25 14:31:37 -0500
+
+
+Started GET "/assets/bike.css?body=1" for 127.0.0.1 at 2014-10-25 14:31:37 -0500
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-10-25 14:31:37 -0500
+
+
+Started GET "/assets/catalog.css?body=1" for 127.0.0.1 at 2014-10-25 14:31:37 -0500
+
+
+Started GET "/assets/clients.css?body=1" for 127.0.0.1 at 2014-10-25 14:31:38 -0500
+
+
+Started GET "/assets/contract_histories.css?body=1" for 127.0.0.1 at 2014-10-25 14:31:38 -0500
+
+
+Started GET "/assets/equipment.css?body=1" for 127.0.0.1 at 2014-10-25 14:31:38 -0500
+
+
+Started GET "/assets/foundation-icons/foundation-icons.css?body=1" for 127.0.0.1 at 2014-10-25 14:31:38 -0500
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-10-25 14:31:38 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-10-25 14:31:38 -0500
+
+
+Started GET "/assets/inventories.css?body=1" for 127.0.0.1 at 2014-10-25 14:31:38 -0500
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2014-10-25 14:31:38 -0500
+
+
+Started GET "/assets/managers.css?body=1" for 127.0.0.1 at 2014-10-25 14:31:38 -0500
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-10-25 14:31:38 -0500
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2014-10-25 14:31:38 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-25 14:31:38 -0500
+
+
+Started GET "/assets/sellers.css?body=1" for 127.0.0.1 at 2014-10-25 14:31:38 -0500
+
+
+Started GET "/assets/static_controller.css?body=1" for 127.0.0.1 at 2014-10-25 14:31:38 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-25 14:31:38 -0500
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2014-10-25 14:31:39 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-25 14:31:39 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-25 14:31:39 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-10-25 14:31:39 -0500
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2014-10-25 14:31:39 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-10-25 14:31:39 -0500
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2014-10-25 14:31:39 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-10-25 14:31:39 -0500
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2014-10-25 14:31:39 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-10-25 14:31:39 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-10-25 14:31:39 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-10-25 14:31:39 -0500
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2014-10-25 14:31:39 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-10-25 14:31:39 -0500
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2014-10-25 14:31:40 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2014-10-25 14:31:40 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-10-25 14:31:40 -0500
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2014-10-25 14:31:40 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-25 14:31:40 -0500
+
+
+Started GET "/assets/accesory_part.js?body=1" for 127.0.0.1 at 2014-10-25 14:31:40 -0500
+
+
+Started GET "/assets/accesory_parts.js?body=1" for 127.0.0.1 at 2014-10-25 14:31:40 -0500
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-10-25 14:31:40 -0500
+
+
+Started GET "/assets/bike.js?body=1" for 127.0.0.1 at 2014-10-25 14:31:40 -0500
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-10-25 14:31:40 -0500
+
+
+Started GET "/assets/catalog.js?body=1" for 127.0.0.1 at 2014-10-25 14:31:40 -0500
+
+
+Started GET "/assets/clients.js?body=1" for 127.0.0.1 at 2014-10-25 14:31:40 -0500
+
+
+Started GET "/assets/contract_histories.js?body=1" for 127.0.0.1 at 2014-10-25 14:31:40 -0500
+
+
+Started GET "/assets/equipment.js?body=1" for 127.0.0.1 at 2014-10-25 14:31:40 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-10-25 14:31:41 -0500
+
+
+Started GET "/assets/inventories.js?body=1" for 127.0.0.1 at 2014-10-25 14:31:41 -0500
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2014-10-25 14:31:41 -0500
+
+
+Started GET "/assets/managers.js?body=1" for 127.0.0.1 at 2014-10-25 14:31:41 -0500
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-10-25 14:31:41 -0500
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2014-10-25 14:31:41 -0500
+
+
+Started GET "/assets/sellers.js?body=1" for 127.0.0.1 at 2014-10-25 14:31:41 -0500
+
+
+Started GET "/assets/static_controller.js?body=1" for 127.0.0.1 at 2014-10-25 14:31:41 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-25 14:31:41 -0500
+
+
+Started GET "/articles/new/" for 127.0.0.1 at 2014-10-25 14:32:02 -0500
+Processing by ArticlesController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered articles/_form.html.erb (15.6ms)
+  Rendered articles/new.html.erb within layouts/application (46.8ms)
+  Rendered layouts/_messages.html.erb (15.6ms)
+Completed 200 OK in 1624ms (Views: 1577.6ms | ActiveRecord: 46.8ms)
+
+
+Started GET "/sellers.pdf" for 127.0.0.1 at 2014-10-25 14:32:31 -0500
+Processing by SellersController#index as PDF
+  [1m[35mUser Load (1.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mSeller Load (131.0ms)[0m  [1mSELECT `sellers`.* FROM `sellers`[0m
+  Rendered text template (0.0ms)
+Sent data Vendedores.pdf (395.0ms)
+Completed 200 OK in 930ms (Views: 382.0ms | ActiveRecord: 160.0ms)

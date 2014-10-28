@@ -28,8 +28,9 @@
               <td><%= inventory[1] %></td>
               <td><%= inventory[2] %></td>
               <td><%= inventory[3]%></td>
-              <td><%= link_to 'Ver', inventory_path(:id => inventory[4]), class: "small button success" %></td>
-              <td><%= link_to 'Eliminar', inventory_path(:id => inventory[4]), method: :delete, class: "small button alert" , data: { confirm: 'Esta seguro?'} %></td>
+              <td><%= link_to 'Ver', inventory_path(:id => inventory[4]), class: "small button success" %>
+              <%= link_to 'Editar', edit_inventory_path(:id =>inventory[4]), class: "small button success" %>
+              </td>
             </tr>
             <% end %>
           </tbody>
