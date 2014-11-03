@@ -33,23 +33,23 @@
             <td><%= sale[4] %></td>
             <td><%= link_to 'Ver',sale_path(:id =>sale[0]), class: "small button success"%>
               <%= link_to 'Editar', edit_sale_path(:id =>sale[0]), class: "small button success" %>
-                <% if sale[5] == 1 %>
-                <%= link_to 'Deshabilitar', sale_path(:id=>sale[0]), method: :delete, class: "small button alert", data: { confirm: '¿Estas seguro de deshabilitar esta venta?' }%>
-                <% else %>
-                <%=link_to "Habilitar", sale_path(:id=>sale[0]), method: :delete, class: "small button success"%>
-              </td>
-              <% end %>
-
-
-            </tr>
+              <% if sale[5] == 1 %>
+              <%= link_to 'Deshabilitar', sale_path(:id=>sale[0]), method: :delete, class: "small button alert", data: { confirm: '¿Estas seguro de deshabilitar esta venta?' }%>
+              <% else %>
+              <%=link_to "Habilitar", sale_path(:id=>sale[0]), method: :delete, class: "small button success"%>
+            </td>
             <% end %>
-          </tbody>
-        </table>
-      </div>
-      <br>
-
-      <div class="small-4 large-centered columns"><%= link_to "Crear Venta", new_sale_path, class: "button success radius"%>  </div>
+          </tr>
+          <% end %>
+        </tbody>
+      </table>
     </div>
+    <br>
+    <% if current_user.userType == 'Seller' %>
+      <div class="small-4 large-centered columns"><%= link_to "Crear Venta", new_sale_path, class: "button success radius"%>  </div>
+    <% end %>
+
   </div>
-  <%end%>
+</div>
+<%end%>
 </div>

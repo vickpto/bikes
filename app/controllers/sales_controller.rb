@@ -5,8 +5,6 @@ class SalesController < ApplicationController
   def index
     query="select distinct(s.saleId), (select concat(username,'  ', userLastName) from sellers where personId=s.sellerId), (select concat(personName, ' ', lastName) from clients where personId=s.clientId), s.saleDate, s.note, s.saleStatus from sales s, items i where s.saleId=i.saleId"
     @sales=ActiveRecord::Base.connection.execute(query)
-    
-    
   end
 
   def show

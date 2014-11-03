@@ -41,6 +41,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
 
 gem 'bson_ext'
+gem 'mailcatcher'
 gem 'zurb-foundation', '~>4.0.0'
 gem 'devise'
 gem 'cancan'
