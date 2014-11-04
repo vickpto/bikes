@@ -29,9 +29,10 @@
         <% else%>
         <% @productsB.each do |product| %>
         <div class="large-4 small-6 columns">
-          <%= image_tag product.image.url%>
+          <%= image_tag product.image.url (:small)%>
           <div class="panel">
-            <h5><%= product.productName %> - <%= product.productTradeMark %></h5>
+            <h5><%= product.productName %></h5>
+            <h5 class="subheader"> <%= product.productTradeMark %></h5>
             <h6 class="subheader"><%= product.productPrice %> COP</h6>
             <%= link_to 'Ver mas', bike_path(product) , class: "small button center"%>
           </div>
@@ -53,7 +54,8 @@
         <div class="large-4 small-6 columns">
           <%= image_tag product.image.url%>
           <div class="panel">
-            <h5><%= product.productName %> - <%= product.productTradeMark %></h5>
+            <h5><%= product.productName %></h5>
+            <h5 class="subheader"> <%= product.productTradeMark %></h5>
             <h6 class="subheader"><%= product.productPrice %> COP</h6>
             <%= link_to 'Ver mas', equipment_path(product) , class: "small button center"%>
           </div>
@@ -73,7 +75,8 @@
         <div class="large-4 small-6 columns">
           <%= image_tag product.image.url%>
           <div class="panel">
-            <h5><%= product.productName %> - <%= product.productTradeMark %></h5>
+            <h5><%= product.productName %></h5>
+            <h5 class="subheader"> <%= product.productTradeMark %></h5>
             <h6 class="subheader"><%= product.productPrice %> COP</h6>
             <%= link_to 'Ver mas', accesory_part_path(product) , class: "small button center"%>
           </div>

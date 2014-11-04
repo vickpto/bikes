@@ -4,7 +4,7 @@ class InventoriesController < ApplicationController
   before_filter :authenticate_user!
 
   def index
-    query = "select p.productName, p.productReference, i.productAmount, i.agregationDate, i.id, p.productStatus from products p, inventories i where i.productId=p.productId"
+    query = "select p.typeProduct, p.productName, p.productReference, i.productAmount, i.agregationDate, i.id, p.productStatus from products p, inventories i where i.productId=p.productId order by p.typeProduct"
     @products = ActiveRecord::Base.connection.execute(query)
   end
 

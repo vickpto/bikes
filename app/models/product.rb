@@ -11,7 +11,7 @@ class Product < ActiveRecord::Base
 	#validates_length_of :size, :within => 1..2
 	#validates_length_of :gender, :within => 1..1
 	
-	has_attached_file :image
+	has_attached_file :image, :styles => { :small => "220x220#" , :medium => "250x250#" }
 	#validates_attachment :image, presence: true, content_type: { content_type: ["image/jpg", "image/jpeg", "image/png"] }
 	#validates_attachment_content_type :image, :content_type => ["image/jpg", "image/jpeg", "image/png", "image/gif"]
 	#validates_attachment :image, content_type: { content_type: /\Aimage\/.*\Z/ }

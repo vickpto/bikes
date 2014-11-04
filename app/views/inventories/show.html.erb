@@ -1,30 +1,35 @@
 <div class="panel ">
-<div class="row">
-	<div class="large-8 columns">
-		<h2>Inventario</h2>
-	</div>
-</div>
-
-<% @product.each do |product| %>
-<div class="row">
-	<div class="large-9 columns">
-		<div class="actions">
-			<strong>Producto:</strong>
-  			<%= product[0] %> - <%= product[1] %> - <%= product[3] %>
+	<div class="row">
+		<div class="large-8 columns">
+			<h2>Inventario</h2>
 		</div>
 	</div>
-</div>
 
-<div class="row">
-	<div class="large-9 columns">
-		<div class="actions">
-			<strong>Cantidades:</strong>
-  			<%= product[2]%>
+	<% @product.each do |product| %>
+	<div class="row">
+		<div class="large-9 columns">
+			<div class="actions">
+				<strong>Producto:</strong>
+				<%= product[0] %> - <%= product[1] %> - <%= product[3] %>
+			</div>
 		</div>
 	</div>
+
+	<div class="row">
+		<div class="large-9 columns">
+			<div class="actions">
+				<strong>Cantidades:</strong>
+				<%= product[2]%>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="large-9 columns">
+			<%= link_to 'Editar', edit_inventory_path(:id =>product[4]), class: "small button success radius" %>
+		</div>
+	</div>
+	<% end %>
 </div>
-<%= link_to 'Editar', edit_inventory_path(:id =>product[4]), class: "small button success" %>
-<% end %>
 
 
 <div class="row">
@@ -35,6 +40,6 @@
 	</div>
 </div>
 
-</div>
+
 
 
