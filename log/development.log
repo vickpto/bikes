@@ -26969,3 +26969,186 @@ Processing by BikesController#index as HTML
   Rendered bikes/index.html.erb within layouts/application (15.6ms)
   Rendered layouts/_messages.html.erb (15.6ms)
 Completed 200 OK in 2501ms (Views: 2469.4ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 17:02:19 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (42.1ms)
+  [1m[35mUser Load (2.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 6915ms (Views: 6736.8ms | ActiveRecord: 18.0ms)
+
+
+Started GET "/assets/accesory_part.css?body=1" for 127.0.0.1 at 2014-11-04 17:02:28 -0500
+
+
+Started GET "/assets/accesory_parts.css?body=1" for 127.0.0.1 at 2014-11-04 17:02:29 -0500
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-11-04 17:02:29 -0500
+
+
+Started GET "/assets/bike.css?body=1" for 127.0.0.1 at 2014-11-04 17:02:29 -0500
+
+
+Started GET "/assets/bikes.css?body=1" for 127.0.0.1 at 2014-11-04 17:02:29 -0500
+
+
+Started GET "/assets/catalog.css?body=1" for 127.0.0.1 at 2014-11-04 17:02:29 -0500
+
+
+Started GET "/assets/clients.css?body=1" for 127.0.0.1 at 2014-11-04 17:02:29 -0500
+
+
+Started GET "/assets/contract_histories.css?body=1" for 127.0.0.1 at 2014-11-04 17:02:30 -0500
+
+
+Started GET "/assets/equipment.css?body=1" for 127.0.0.1 at 2014-11-04 17:02:30 -0500
+
+
+Started GET "/assets/foundation-icons/foundation-icons.css?body=1" for 127.0.0.1 at 2014-11-04 17:02:30 -0500
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-11-04 17:02:30 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-04 17:02:30 -0500
+
+
+Started GET "/assets/inventories.css?body=1" for 127.0.0.1 at 2014-11-04 17:02:30 -0500
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2014-11-04 17:02:30 -0500
+
+
+Started GET "/assets/managers.css?body=1" for 127.0.0.1 at 2014-11-04 17:02:30 -0500
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-11-04 17:02:31 -0500
+
+
+Started GET "/assets/sales.css?body=1" for 127.0.0.1 at 2014-11-04 17:02:31 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-04 17:02:31 -0500
+
+
+Started GET "/assets/sellers.css?body=1" for 127.0.0.1 at 2014-11-04 17:02:31 -0500
+
+
+Started GET "/assets/static_controller.css?body=1" for 127.0.0.1 at 2014-11-04 17:02:31 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-04 17:02:31 -0500
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2014-11-04 17:02:31 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-04 17:02:31 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-04 17:02:32 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-11-04 17:02:32 -0500
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2014-11-04 17:02:32 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-11-04 17:02:32 -0500
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2014-11-04 17:02:32 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-11-04 17:02:32 -0500
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2014-11-04 17:02:32 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-11-04 17:02:32 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-11-04 17:02:33 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-11-04 17:02:33 -0500
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2014-11-04 17:02:33 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-11-04 17:02:33 -0500
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2014-11-04 17:02:33 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2014-11-04 17:02:33 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-11-04 17:02:33 -0500
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2014-11-04 17:02:33 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-04 17:02:34 -0500
+
+
+Started GET "/assets/accesory_part.js?body=1" for 127.0.0.1 at 2014-11-04 17:02:34 -0500
+
+
+Started GET "/assets/accesory_parts.js?body=1" for 127.0.0.1 at 2014-11-04 17:02:34 -0500
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-11-04 17:02:34 -0500
+
+
+Started GET "/assets/bike.js?body=1" for 127.0.0.1 at 2014-11-04 17:02:34 -0500
+
+
+Started GET "/assets/bikes.js?body=1" for 127.0.0.1 at 2014-11-04 17:02:34 -0500
+
+
+Started GET "/assets/catalog.js?body=1" for 127.0.0.1 at 2014-11-04 17:02:34 -0500
+
+
+Started GET "/assets/clients.js?body=1" for 127.0.0.1 at 2014-11-04 17:02:34 -0500
+
+
+Started GET "/assets/contract_histories.js?body=1" for 127.0.0.1 at 2014-11-04 17:02:34 -0500
+
+
+Started GET "/assets/equipment.js?body=1" for 127.0.0.1 at 2014-11-04 17:02:35 -0500
+
+
+Started GET "/assets/inventories.js?body=1" for 127.0.0.1 at 2014-11-04 17:02:35 -0500
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2014-11-04 17:02:35 -0500
+
+
+Started GET "/assets/managers.js?body=1" for 127.0.0.1 at 2014-11-04 17:02:35 -0500
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-11-04 17:02:35 -0500
+
+
+Started GET "/assets/sellers.js?body=1" for 127.0.0.1 at 2014-11-04 17:02:35 -0500
+
+
+Started GET "/assets/static_controller.js?body=1" for 127.0.0.1 at 2014-11-04 17:02:35 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-04 17:02:35 -0500
+
+
+Started GET "/assets/sales.js?body=1" for 127.0.0.1 at 2014-11-04 17:02:36 -0500
+
+
+Started GET "/assets/foundation-icons/foundation-icons.woff" for 127.0.0.1 at 2014-11-04 17:02:36 -0500
