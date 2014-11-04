@@ -13,7 +13,7 @@ class ItemsController < ApplicationController
 
   def new
     @item = Item.new
-    @products=Product.all
+    @products=Product.where(:productStatus => 1)
     query="select p.productName, p.productReference, i.itemAmount, i.id from products p, items i where p.productId=i.productId and i.saleId=#{params[:saleId]}"
     @items=ActiveRecord::Base.connection.execute(query)
     @saleId=params[:saleId]

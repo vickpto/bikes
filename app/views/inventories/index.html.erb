@@ -13,6 +13,7 @@
         <table>
           <thead>
             <tr>
+              <th>Tipo de producto</th>
               <th>Producto</th>
               <th>Referencia</th>
               <th>Cantidad</th>
@@ -24,12 +25,22 @@
           <tbody>
             <% @products.each do |inventory| %>
             <tr>
-              <td><%= inventory[0] %></td>
+              <td>
+                <% if inventory[0].to_s == 'BIKE' %>
+                  Bicicleta 
+                <% end %>
+                <% if  inventory[0].to_s == 'EQUIPMENT'%>
+                Equipación
+                <% else %>
+                Accesorio-Repuesto
+                <% end %>
+             </td>
               <td><%= inventory[1] %></td>
               <td><%= inventory[2] %></td>
               <td><%= inventory[3]%></td>
-              <td><%= link_to 'Ver', inventory_path(:id => inventory[4]), class: "small button success" %>
-              <%= link_to 'Editar', edit_inventory_path(:id =>inventory[4]), class: "small button success" %>
+              <td><%= inventory[4] %></td>
+              <td><%= link_to 'Ver', inventory_path(:id => inventory[5]), class: "small button success" %>
+              <%= link_to 'Editar', edit_inventory_path(:id =>inventory[5]), class: "small button success" %>
               </td>
             </tr>
             <% end %>
@@ -38,7 +49,7 @@
 
         </div>
       <br>
-      <%= link_to 'New Inventory', new_inventory_path , class: "radius button center"%>
+      <%= link_to 'Nuevo Inventario', new_inventory_path , class: "radius button center"%>
     </div>    
   </div>
   <br>
