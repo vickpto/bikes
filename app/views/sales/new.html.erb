@@ -7,17 +7,30 @@
 			<br><br>
 		</div>
 	</div>
-
-
-	<%= render 'form' %>
-
-
+	<% if @clients.empty?%>
 	<div class="row">
-		<div class="large-9 columns">
-			<div class="actions">
-				<%= link_to '← Volver', sales_path %>
-			</div>
+		<div class="large-8 columns">
+			<h3>Aún no se ha registrado ningun cliente</h3>
+			<% if current_user.userType=='Seller' %> 
+			<%= link_to 'Nuevo Cliente',new_client_path , class: "radius button center" %> 
+		</div>
+	</div>
+	<% end %>
+	<% else%>
+	<%= render 'form' %>
+	<% end %>
+
+
+
+</div>
+<div class="row">
+	<div class="large-9 columns">
+		<div class="actions">
+			<%= link_to '← Volver', sales_path %>
 		</div>
 	</div>
 </div>
+
+
+
 
